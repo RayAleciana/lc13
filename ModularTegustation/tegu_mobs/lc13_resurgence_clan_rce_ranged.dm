@@ -395,6 +395,13 @@
 	CancelTeleport()
 
 /mob/living/simple_animal/hostile/clan/ranged/warper/proc/TeleportMob(mob/living/L, turf/destination)
+	// Check if the mob can move - test Move() to current location
+	var/turf/current_turf = get_turf(L)
+	if(current_turf && !L.Move(current_turf, get_dir(L, current_turf)))
+		// Can't teleport immobile mobs (like anchored buildings)
+		visible_message(span_notice("The teleportation fails on [L] - they cannot be moved!"))
+		return
+	
 	// Fade out effect
 	new /obj/effect/temp_visual/dir_setting/cult/phase/out(get_turf(L), L)
 	animate(L, alpha = 0, time = 5, easing = EASE_OUT)

@@ -4481,6 +4481,7 @@
 #include "ModularTegustation\tegu_mobs\lc13_humanoids.dm"
 #include "ModularTegustation\tegu_mobs\lc13_nuke_clowns.dm"
 #include "ModularTegustation\tegu_mobs\lc13_outskirtdwellers.dm"
+#include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_buildings.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_greed_touched.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_mobs.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_npcs.dm"
