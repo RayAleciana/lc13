@@ -97,7 +97,6 @@
 /mob/living/simple_animal/hostile/clan/ranged/turret/AttackingTarget(atom/attacked_target)
 	if(!target)
 		GiveTarget(attacked_target)
-	dir = get_cardinal_dir(src, target)
 	return OpenFire()
 
 // Special attack - rapid barrage
@@ -170,18 +169,20 @@
 	name = "turret bolt"
 	damage = 35
 	damage_type = RED_DAMAGE
+	color = "#7CFC00"
+	icon_state = "toxin"
 
 // Level 1 turret projectile
 /obj/projectile/clan_bullet/turret/level1
-	damage = 40 // 20 DPS with 2 second cooldown
+	damage = 20 // 10 DPS with 2 second cooldown
 
 // Level 2 turret projectile
 /obj/projectile/clan_bullet/turret/level2
-	damage = 80 // 40 DPS with 2 second cooldown
+	damage = 40 // 20 DPS with 2 second cooldown
 
 // Level 3 turret projectile
 /obj/projectile/clan_bullet/turret/level3
-	damage = 120 // 60 DPS with 2 second cooldown
+	damage = 80 // 40 DPS with 2 second cooldown
 
 //////////////
 // XCORP TURRET LEVEL VARIANTS
@@ -190,8 +191,8 @@
 /mob/living/simple_animal/hostile/clan/ranged/turret/level1
 	name = "X-Corp Turret, Level 1"
 	desc = "A basic automated defense turret bearing X-Corp markings."
-	maxHealth = 1000
-	health = 1000
+	maxHealth = 800
+	health = 800
 	icon_state = "greed_turret_v2"
 	icon_living = "greed_turret_v2"
 	projectiletype = /obj/projectile/clan_bullet/turret/level1
@@ -201,8 +202,8 @@
 /mob/living/simple_animal/hostile/clan/ranged/turret/level2
 	name = "X-Corp Turret, Level 2"
 	desc = "An upgraded automated defense turret with enhanced firepower."
-	maxHealth = 1500
-	health = 1500
+	maxHealth = 1200
+	health = 1200
 	icon_state = "greed_turret_v2_2"
 	icon_living = "greed_turret_v2_2"
 	projectiletype = /obj/projectile/clan_bullet/turret/level2
@@ -214,8 +215,8 @@
 	desc = "An advanced automated defense turret with maximum firepower."
 	icon_state = "greed_turret_v2_3"
 	icon_living = "greed_turret_v2_3"
-	maxHealth = 2000
-	health = 2000
+	maxHealth = 1800
+	health = 1800
 	projectiletype = /obj/projectile/clan_bullet/turret/level3
 	ranged_cooldown_time = 2 SECONDS // Fire every 2 seconds for 60 DPS
 

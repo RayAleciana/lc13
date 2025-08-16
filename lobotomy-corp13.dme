@@ -4488,6 +4488,7 @@
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_rce.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_rce_ranged.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_tinkerer.dm"
+#include "ModularTegustation\tegu_mobs\lc13_seed_of_greed.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_tapes.dm"
 #include "ModularTegustation\tegu_mobs\necromancer.dm"
 #include "ModularTegustation\tegu_mobs\necromancer_mobs.dm"
