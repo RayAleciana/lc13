@@ -19,6 +19,8 @@
 	attack_verb_continuous = "bashes"
 	attack_verb_simple = "bash"
 
+	var/can_act = TRUE
+
 //Variables important for distortions
 	//The EGO worn by the egoist
 	ego_list = list(
@@ -73,5 +75,14 @@
 		C.add_overlay(new_overlay)
 		addtimer(CALLBACK (C, TYPE_PROC_REF(/atom, cut_overlay), new_overlay), 4 SECONDS)
 
+/mob/living/simple_animal/hostile/distortion/lantern/Move()
+	if(!can_act)
+		return FALSE
+	..()
+
+/mob/living/simple_animal/hostile/distortion/lantern/AttackingTarget()
+	if(!can_act)
+		return FALSE
+	..()
 
 
