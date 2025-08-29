@@ -278,6 +278,7 @@
 	name = "K-Corp care package"
 
 /obj/item/storage/box/corporation/kcorp/PopulateContents()
+	..()
 	new /obj/item/toy/plush/bongy(src)
 	new /obj/item/grenade/spawnergrenade/khealing(src)
 	for(var/index in 1 to 3)
@@ -287,6 +288,7 @@
 	name = "L-Corp care package"
 
 /obj/item/storage/box/corporation/lcorp/PopulateContents()
+    ..()
 	new /obj/item/work_console_upgrade/work_meltdown_screen(src)
 	new /obj/item/ego_gift_extractor(src)
 	new /obj/item/trait_injector/clerk_fear_immunity_injector(src)
@@ -297,6 +299,7 @@
 	name = "R-Corp care package"
 
 /obj/item/storage/box/corporation/rcorp/PopulateContents()
+    ..()
 	new /obj/item/clothing/head/beret/tegu/rcorp(src)
 	new /obj/item/clothing/neck/cloak/rcorp(src)
 	for(var/index in 1 to 3)
@@ -306,6 +309,7 @@
 	name = "W-Corp care package"
 
 /obj/item/storage/box/corporation/wcorp/PopulateContents()
+    ..()
 	new /obj/item/clothing/head/ego_hat/wcorp(src)
 	new /obj/item/clothing/head/ego_hat/wcorp(src)
 	new /obj/item/ego_weapon/city/wcorp(src)
@@ -316,6 +320,7 @@
 	name = "N-Corp care package"
 
 /obj/item/storage/box/corporation/ncorp/PopulateContents()
+    ..()
 	new /obj/item/attribute_temporary/justicesmall(src)
 	new /obj/item/attribute_temporary/temperancesmall(src)
 	new /obj/item/attribute_temporary/fortitudesmall(src)
@@ -326,6 +331,7 @@
 	name = "P-Corp care package"
 
 /obj/item/storage/box/corporation/pcorp/PopulateContents()
+    ..()
 	new /obj/item/storage/pcorp_pocket(src)
 	new /obj/item/storage/pcorp_pocket(src)
 	new /obj/item/storage/pcorp_weapon(src)
@@ -336,6 +342,7 @@
 	name = "J-Corp care package"
 
 /obj/item/storage/box/corporation/jcorp/PopulateContents()
+    ..()
 	new /obj/item/a_gift/jcorp(src)
 	new /obj/item/a_gift/jcorp(src)
 	for(var/index in 1 to 3)
@@ -362,6 +369,12 @@
 			added_research += research
 			added_research[research] = 1
 	LAZYADD(research_list, added_research)
+
+//i dont know what im doing so fix this if this doesn't look good, im not a coder, and people talk words i struggle to understand. credit to eidos and cupa for trying extremely hard to make this make sense to me.
+/obj/item/storage/box/corporation/PopulateContents()
+ 	var/list/plushielist = list(/item/toy/plush/benjamingay, /item/toy/plush/myolesbian, /item/toy/plush/angelaroace, /item/toy/plush/ayinfluid, /item/toy/plush/bongtrans)
+ 	var/plushie = pick(plushielist)
+ 	new plushie(src)
 
 #undef IS_MONIES
 #undef IS_REFINED_PE
