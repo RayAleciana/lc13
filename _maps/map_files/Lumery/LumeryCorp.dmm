@@ -258,7 +258,7 @@
 "nF" = (/turf/open/floor/facility/white,/area/department_main/safety)
 "nI" = (/obj/structure/table/wood/fancy/red,/obj/effect/turf_decal/siding/red,/obj/effect/turf_decal/plaque{icon_state = "LC29"},/turf/open/floor/facility/dark,/area/department_main/discipline)
 "nL" = (/obj/structure/flora/grass/jungle/b,/turf/open/floor/grass,/area/facility_hallway/central)
-"nP" = (/obj/structure/table/wood/fancy/cyan,/obj/item/refiner_filter/yellow{pixel_x = 1; pixel_y = -4},/obj/item/refiner_filter/yellow{pixel_x = 1; pixel_y = -4},/obj/item/refiner_filter/blue,/obj/item/refiner_filter/blue,/obj/item/refiner_filter/green,/obj/item/refiner_filter/green,/obj/item/refiner_filter/red,/obj/item/refiner_filter/red,/turf/open/floor/facility/dark,/area/department_main/welfare)
+"nP" = (/obj/structure/table/wood/fancy/cyan,/turf/open/floor/facility/dark,/area/department_main/welfare)
 "nS" = (/obj/structure/sign/ordealmonitor{pixel_y = -32},/obj/effect/turf_decal/siding/purple/corner{dir = 1},/turf/open/floor/facility/dark,/area/department_main/information)
 "nU" = (/obj/effect/spawner/abnormality_room,/turf/closed/indestructible/reinforced,/area/department_main/discipline)
 "nX" = (/obj/machinery/camera/autoname{dir = 4},/turf/open/floor/facility/dark,/area/facility_hallway/architecture)
