@@ -288,6 +288,7 @@
 "pi" = (/obj/machinery/door/poddoor{id = "facilitylockdown"; name = "Facility Lockdown Blast Door"},/turf/open/floor/plasteel/dark,/area/facility_hallway/south)
 "pl" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/floor,/turf/open/floor/carpet/royalblue,/area/department_main/welfare)
 "pm" = (/turf/closed/indestructible/reinforced,/area/department_main/welfare)
+"pn" = (/obj/machinery/computer/extraction_cargo/discipline{dir = 4},/turf/open/floor/carpet/red,/area/facility_hallway/discipline)
 "po" = (/turf/closed/indestructible/reinforced,/area/tcommsat/server)
 "pq" = (/obj/machinery/vending/medical{req_access = list()},/turf/open/floor/facility/dark,/area/facility_hallway/safety)
 "pu" = (/obj/machinery/light{dir = 8; pixel_x = -9; pixel_y = 4},/turf/open/floor/plasteel/sepia,/area/facility_hallway/training)
@@ -508,6 +509,7 @@
 "Am" = (/obj/structure/closet/secure_closet/freezer/fridge/open{anchored = 1},/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/rice,/obj/item/reagent_containers/food/condiment/rice,/obj/item/reagent_containers/food/condiment/rice,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/obj/item/storage/fancy/egg_box,/turf/open/floor/plasteel/cafeteria,/area/facility_hallway/training)
 "An" = (/obj/effect/turf_decal/siding/yellow{dir = 4},/obj/structure/sign/ordealmonitor{pixel_x = -32},/turf/open/floor/facility/dark,/area/department_main/extraction)
 "Ao" = (/obj/effect/turf_decal/bot,/obj/machinery/telecomms/processor/preset_two,/turf/open/floor/circuit/telecomms/mainframe,/area/tcommsat/server)
+"Aw" = (/obj/machinery/holopad,/turf/open/floor/carpet/red,/area/facility_hallway/discipline)
 "Ax" = (/obj/structure/disposalpipe/segment{dir = 6},/turf/open/floor/engine,/area/facility_hallway/south)
 "Az" = (/obj/structure/disposalpipe/segment,/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet/stellar,/area/department_main/command)
 "AG" = (/obj/effect/turf_decal/siding/yellow{dir = 1},/obj/machinery/camera/autoname{dir = 6},/turf/open/floor/plasteel/dark,/area/facility_hallway/command)
@@ -766,7 +768,10 @@
 "Oq" = (/obj/effect/spawner/abnormality_room,/turf/closed/indestructible/reinforced,/area/facility_hallway/control)
 "OE" = (/obj/effect/landmark/xeno_spawn,/turf/open/floor/facility/dark,/area/facility_hallway/control)
 "OG" = (/obj/machinery/door/airlock{icon = 'icons/obj/doors/airlocks/station/mining.dmi'; name = "Training Department"; normal_integrity = 500},/turf/open/floor/plasteel/sepia,/area/facility_hallway/training)
+<<<<<<< HEAD
 "OI" = (/obj/effect/turf_decal/siding/red{dir = 4},/obj/machinery/camera/autoname{dir = 9; pixel_x = 0; pixel_y = 23},/turf/open/floor/plasteel/dark,/area/facility_hallway/discipline)
+=======
+>>>>>>> a5df94f6a0 (Lumery Fix)
 "OJ" = (/obj/machinery/computer/security/telescreen{pixel_x = 20; pixel_y = -2},/obj/machinery/computer/security/telescreen{pixel_x = -20; pixel_y = -2},/obj/machinery/computer/security/telescreen{pixel_y = 1},/turf/closed/indestructible/reinforced,/area/facility_hallway/discipline)
 "OK" = (/turf/closed/indestructible/rock,/turf/open/space,/area/space)
 "OL" = (/obj/structure/disposalpipe/segment{dir = 1},/obj/effect/turf_decal/siding/green,/turf/open/floor/facility/dark,/area/department_main/safety)
