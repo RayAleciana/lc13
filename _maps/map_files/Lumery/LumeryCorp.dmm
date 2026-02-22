@@ -93,7 +93,7 @@
 "fr" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet/stellar,/area/department_main/command)
 "fs" = (/obj/machinery/light/floor,/obj/effect/turf_decal/plaque{alpha = 230; icon_state = "LC28"},/turf/open/floor/facility/dark,/area/department_main/discipline)
 "fH" = (/turf/closed/indestructible/reinforced,/area/facility_hallway/safety)
-"fI" = (/obj/machinery/computer/slot_machine,/obj/effect/turf_decal/siding/blue/corner{color = "#3234B9"},/turf/open/floor/facility/dark,/area/department_main/welfare)
+"fI" = (/obj/effect/turf_decal/siding/blue/corner{color = "#3234B9"},/obj/machinery/vending/cigarette,/turf/open/floor/facility/dark,/area/department_main/welfare)
 "fL" = (/turf/closed/indestructible/fakeglass,/area/department_main/safety)
 "fN" = (/obj/structure/disposalpipe/segment,/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet/royalblack,/area/department_main/extraction)
 "fS" = (/obj/structure/chair/office,/obj/machinery/light/floor,/turf/open/floor/facility/dark,/area/department_main/safety)
