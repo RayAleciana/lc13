@@ -55,8 +55,10 @@
 
 		//Medical
 		new /datum/data/extraction_cargo("Epinepherine Medi-Pen ",		/obj/item/reagent_containers/hypospray/medipen,						40, CAT_MEDICAL) = 1,
-		new /datum/data/extraction_cargo("Sal-Acid Medi-Pen ",			/obj/item/reagent_containers/hypospray/medipen/salacid,				50, CAT_MEDICAL) = 1,
-		new /datum/data/extraction_cargo("Mental-Stabilizer Medi-Pen ",	/obj/item/reagent_containers/hypospray/medipen/mental,				50, CAT_MEDICAL) = 1,
+		new /datum/data/extraction_cargo("L-Corp Health Medi-Pen ",		/obj/item/reagent_containers/hypospray/medipen/l_health,			50, CAT_MEDICAL) = 1,
+		new /datum/data/extraction_cargo("L-Corp Sanity Medi-Pen ",		/obj/item/reagent_containers/hypospray/medipen/l_sanity,			50, CAT_MEDICAL) = 1,
+		new /datum/data/extraction_cargo("L-Corp Mixed Medi-Pen ",		/obj/item/reagent_containers/hypospray/medipen/l_mixed,				50, CAT_MEDICAL) = 1,
+		new /datum/data/extraction_cargo("L-Corp Burn Salve Medi-Pen ",	/obj/item/reagent_containers/hypospray/medipen/l_burn,				100, CAT_MEDICAL) = 1,
 		new /datum/data/extraction_cargo("Standard First-Aid Kit ",		/obj/item/storage/firstaid/regular,									250, CAT_MEDICAL) = 1,
 		new /datum/data/extraction_cargo("Naked Nest Cure Vial ",		/obj/item/serpentspoison,											400, CAT_MEDICAL) = 1,
 		new /datum/data/extraction_cargo("Orange Tree Flamer",			/obj/item/ego_weapon/ranged/flammenwerfer,							500, CAT_MEDICAL) = 1,
@@ -64,11 +66,12 @@
 		new /datum/data/extraction_cargo("Assorted Medi-Pen Kit ",		/obj/item/storage/firstaid/revival,									500, CAT_MEDICAL) = 1,
 
 		//Resources - Raw PE, ETC. Abnochem stuff goes here too. This is one use items to further LC13 systems
-		new /datum/data/extraction_cargo("Blue Filter ",				/obj/item/refiner_filter/blue,										5, CAT_RESOURCE) = 1,
-		new /datum/data/extraction_cargo("Green Filter ",				/obj/item/refiner_filter/green,										5, CAT_RESOURCE) = 1,
-		new /datum/data/extraction_cargo("Red Filter ",					/obj/item/refiner_filter/red,										5, CAT_RESOURCE) = 1,
-		new /datum/data/extraction_cargo("Yellow Filter ",				/obj/item/refiner_filter/yellow,									5, CAT_RESOURCE) = 1,
+		new /datum/data/extraction_cargo("Blue Filter ",				/obj/item/stack/refiner_filter/blue,								5, CAT_RESOURCE) = 1,
+		new /datum/data/extraction_cargo("Green Filter ",				/obj/item/stack/refiner_filter/green,								5, CAT_RESOURCE) = 1,
+		new /datum/data/extraction_cargo("Red Filter ",					/obj/item/stack/refiner_filter/red,									5, CAT_RESOURCE) = 1,
+		new /datum/data/extraction_cargo("Yellow Filter ",				/obj/item/stack/refiner_filter/yellow,								5, CAT_RESOURCE) = 1,
 		new /datum/data/extraction_cargo("Raw PE Box ",					/obj/item/rawpe,													50, CAT_RESOURCE) = 1,
+		new /datum/data/extraction_cargo("PE Filter Bag ",				/obj/item/storage/bag/pe_filter,									100, CAT_RESOURCE) = 1,
 		new /datum/data/extraction_cargo("Chemical Extraction Upgrade ",/obj/item/work_console_upgrade/chemical_extraction_attachment,		150, CAT_RESOURCE) = 1,
 		new /datum/data/extraction_cargo("Workchance Calculator Upgrade ",/obj/item/work_console_upgrade/work_prediction_attachment,		200, CAT_RESOURCE) = 1,
 		new /datum/data/extraction_cargo("AbnoChem Starter Pack ",		/obj/structure/closet/crate/science/abnochem_startercrate,			250, CAT_RESOURCE) = 1,
