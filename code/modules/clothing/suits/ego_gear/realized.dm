@@ -475,6 +475,12 @@ This empowered state makes them arc lightning to all nearby foes when taking dam
 	sleep(0.2 SECONDS)
 	ArcLightningScan(target_turf, chains + 1)
 
+/obj/item/clothing/suit/armor/ego_gear/realization/rhythm
+	name = "rhythm"
+	desc = "To satisfy people, a product of despair and suffering of someone else is needed."
+	icon_state = "rhythm"
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 70, BLACK_DAMAGE = 40, PALE_DAMAGE = 40)          //Empowers EGO Weapon Rhythm
+
 /* WAW Realizations */
 
 /obj/item/clothing/suit/armor/ego_gear/realization/goldexperience
@@ -1023,6 +1029,12 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	playsound(get_turf(user), 'sound/misc/moist_impact.ogg', 30, 1)
 	var/mob/living/simple_animal/hostile/naked_nest_serpent_friend/W = new(get_turf(user))
 	W.origin_nest = user
+
+/obj/item/clothing/suit/armor/ego_gear/realization/awe
+	name = "awe"
+	desc = "Scatter. Every gaze shall be drawn to this squalidity."
+	icon_state = "contempt" // Sprite by insiteparaful
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 40, BLACK_DAMAGE = 80, PALE_DAMAGE = 60) // No Ability (For now. Until then it just gets a suspiciously alright statline (I didn't dare add a red 8/black 8 armour))
 
 /* ALEPH Realizations */
 

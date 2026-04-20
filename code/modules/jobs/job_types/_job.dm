@@ -145,6 +145,11 @@
 	if(!ishuman(H))
 		return
 
+	if(SSmaptype.maptype in SSmaptype.citymaps)
+		ADD_TRAIT(H, TRAIT_COMBATFEAR_IMMUNE, CITY_TRAIT)
+		ADD_TRAIT(H, TRAIT_BRUTEPALE, CITY_TRAIT)
+		ADD_TRAIT(H, TRAIT_BRUTESANITY, CITY_TRAIT)
+
 	if(!config)	//Needed for robots.
 		roundstart_experience = minimal_skills
 
@@ -349,6 +354,14 @@
 		holder = "[uniform]"
 	uniform = text2path(holder)
 
+	if(!(H.beret_enabled) && (ispath(head, /obj/item/clothing/head/beret) || ispath(head, /obj/item/clothing/head/hos/beret)))
+		head = null
+
+	// This check is a bit questionable; it's == instead of ispath because I don't want to nuke roles that spawn with HUDglasses.
+	// This pref is only intended to nuke the basic cosmetic sunglasses.
+	if(!(H.sunglasses_enabled) && ((glasses == /obj/item/clothing/glasses/sunglasses) || (glasses == /obj/item/clothing/glasses/middle_sunglasses)))
+		glasses = null
+
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source = null) // Tegu alt job titles
 	if(visualsOnly)
 		return
@@ -356,6 +369,8 @@
 	var/datum/job/J = SSjob.GetJobType(jobtype)
 	if(!J)
 		J = SSjob.GetJob(H.job)
+	if(!J)
+		return
 
 	var/obj/item/card/id/C = H.wear_id
 	if(istype(C))

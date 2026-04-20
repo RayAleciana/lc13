@@ -90,6 +90,33 @@
 	var/datum/action/toggle_scope_zoom/azoom
 	var/pb_knockback = 0
 
+	// Alternate Fire
+	// Set 'alternate_fire_name' to anything to enable this behaviour on your gun.
+	// Only the bare minimum stuff is handled in this alt-fire behaviour, if you want stuff like different recoil or spread for your altfire you'll have to override some procs.
+	// A gun with an alternate fire can toggle between two different magazines firing different ammo types with different stats. This toggle happens via alt-click.
+
+	// These vars are generally unfriendly to varediting. You have been warned (copious use of initial())
+
+	/// The name of the alternate fire type on this gun; for example "Underslung Grenade Launcher" or "High-Output Mode" or "Underslung Shotgun". If null, this alt-fire behaviour is disabled.
+	var/alternate_fire_name = null
+	var/alternate_selected = FALSE
+	var/alternate_shotsleft = 1
+	//Information on the alt fire
+	var/alternate_info
+	/// The way reloading is handled for alternate firetypes. View __defines/combat.dm.
+	var/alternate_reload_type = RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD
+	var/alternate_reload_time = 0
+	var/alternate_projectile_path = /obj/projectile/ego_bullet/ego_knade
+	var/alternate_pellets = 1
+	var/alternate_fire_sound = 'sound/weapons/gun/general/grenade_launch.ogg'
+	var/alternate_fire_sound_volume = 50
+	var/alternate_toggle_sound = 'sound/machines/click.ogg'
+	var/alternate_toggle_sound_volume = 65
+	var/alternate_toggle_spam_protection_cd
+	var/alternate_toggle_enabled_message = span_notice("Alternate fire enabled.")
+	var/alternate_toggle_disabled_message = span_notice("Alternate fire disabled.")
+	var/alternate_toggle_instructions = "alt-clicking"
+
 /obj/item/ego_weapon/ranged/pistol
 	attack_speed = 0.5
 	force = 6
@@ -104,6 +131,11 @@
 
 	update_projectile_examine()
 
+	// If your gun has an altfire and uses shared reloading, the altfire reload will be the same as the normal one.
+	if(alternate_fire_name && !alternate_reload_time)
+		alternate_reload_time = reloadtime
+
+
 /obj/item/ego_weapon/ranged/Destroy()
 	if(isobj(pin)) //Can still be the initial path, then we skip
 		QDEL_NULL(pin)
@@ -116,15 +148,87 @@
 		pin = null
 	return ..()
 
+/// By default, alt-click is reserved for toggling alt-fire on weapons that have an alt-fire. Feel free to override. This won't do anything on most guns.
+/obj/item/ego_weapon/ranged/AltClick(mob/user)
+	if(!alternate_fire_name)
+		return
+	if(!CanUseEgo(user))
+		return
+	if(is_reloading) // Don't want people to smuggle differing reload timers
+		return
+	if(alternate_toggle_spam_protection_cd > world.time)
+		return
+
+	alternate_toggle_spam_protection_cd = world.time + 0.3 SECONDS
+
+	playsound(src, alternate_toggle_sound, alternate_toggle_sound_volume)
+	if(!alternate_selected)
+		EnableAltfire(user, silent = FALSE)
+
+	else
+		DisableAltfire(user, silent = FALSE)
+
+// These two procs are very simple so you can override them easily for more custom behaviour.
+/obj/item/ego_weapon/ranged/proc/EnableAltfire(mob/user, silent = TRUE)
+	alternate_selected = TRUE
+	if(alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+		to_chat(user, span_danger("You dump your magazine to prepare the other ammo type"))
+		shotsleft = 0
+	if(!silent)
+		to_chat(user, alternate_toggle_enabled_message)
+
+/obj/item/ego_weapon/ranged/proc/DisableAltfire(mob/user, silent = TRUE)
+	alternate_selected = FALSE
+	if(alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+		to_chat(user, span_danger("You dump your magazine to prepare the other ammo type"))
+		shotsleft = 0
+	if(!silent)
+		to_chat(user, alternate_toggle_disabled_message)
+
 /obj/item/ego_weapon/ranged/examine(mob/user)
 	. = ..()
 	. += GunAttackInfo()
 	if(!reloadtime)
 		. += span_notice("This weapon has unlimited ammo.")
-	else if(shotsleft>0)
+	else if(shotsleft > 0)
 		. += span_notice("Ammo Counter: [shotsleft]/[initial(shotsleft)].")
 	else
 		. += span_danger("Ammo Counter: [shotsleft]/[initial(shotsleft)].")
+
+	if(alternate_fire_name)
+		. += ""
+		. += span_notice("This weapon has an alternate fire mode: [alternate_fire_name]. Activate by [alternate_toggle_instructions].")
+		if(alternate_info)
+			. += span_notice("Alt Fire - [alternate_info]")
+		// Altfire currently active?
+		if(alternate_selected)
+			. += span_danger("[alternate_fire_name] is currently <b>active!</b>")
+		else
+
+			. += span_notice("[alternate_fire_name] is currently <b>disabled.</b>")
+		// Ammo count for altfire.
+		switch(alternate_reload_type)
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD)
+				. += span_nicegreen("Reloading the magazine will reload the alternate ammo.")
+				if(alternate_shotsleft > 0)
+					. += span_notice("[alternate_fire_name] Ammo Counter: [alternate_shotsleft]/[initial(alternate_shotsleft)].")
+				else
+					. += span_danger("[alternate_fire_name] Ammo Counter: [alternate_shotsleft]/[initial(alternate_shotsleft)].")
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD)
+				. += span_notice("This weapon requires both ammo types to be reloaded separately.")
+				if(alternate_shotsleft > 0)
+					. += span_notice("[alternate_fire_name] Ammo Counter: [alternate_shotsleft]/[initial(alternate_shotsleft)].")
+				else
+					. += span_danger("[alternate_fire_name] Ammo Counter: [alternate_shotsleft]/[initial(alternate_shotsleft)].")
+
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_MAGAZINE)
+				. += span_notice("The alternate fire on this weapon uses the main ammo pool.")
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+				. += span_danger("This weapon can only load one ammo type at a time. Reloading will dump the magazine.")
+
+		. += ""
 
 	if(reloadtime)
 		switch(reloadtime)
@@ -208,9 +312,10 @@
 	qdel(projectile)
 
 /obj/item/ego_weapon/ranged/attack_self(mob/user)
-	if(reloadtime && !is_reloading)
+	var/correct_reload_time = (alternate_selected && alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD) ? alternate_reload_time : reloadtime
+	if(correct_reload_time && !is_reloading)
 		if(roundsreload)
-			INVOKE_ASYNC(src, PROC_REF(rounds_reload), user)
+			INVOKE_ASYNC(src, PROC_REF(rounds_reload), user, alternate_selected)
 		else
 			//Checking for akimbo reload
 			//You can't rounds reload with 1 hand!
@@ -221,50 +326,85 @@
 	return ..()
 
 /obj/item/ego_weapon/ranged/proc/reload_ego(mob/user)
+	var/correct_reload_time = (alternate_selected && alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD) ? alternate_reload_time : reloadtime
 	is_reloading = TRUE
 	to_chat(user,span_notice("You start loading a new magazine."))
 	playsound(src, reload_start_sound, 50, TRUE)
-	if(do_after(user, reloadtime, src)) //gotta reload
+	if(do_after(user, correct_reload_time, src)) //gotta reload
 		playsound(src, reload_success_sound, 50, TRUE)
+
+		//Alright, let's check if we're in the alternate mode, and reloading the second mag.
+		if(alternate_selected && (alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD))
+			alternate_shotsleft = initial(alternate_shotsleft)
+			forced_melee = FALSE //no longer forced to resort to melee
+			is_reloading = FALSE
+			return	//Get the fuck outta here
+
+		//We're ALWAYS reloading the main mag here. If we got this far, it means we're using a gun that wants to load the main mag
 		shotsleft = initial(shotsleft)
+
+		//If we reload both at once? Set the alt shots back too.
+		if(alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD)
+			alternate_shotsleft = initial(alternate_shotsleft)
+
 		forced_melee = FALSE //no longer forced to resort to melee
 
 	is_reloading = FALSE
 
 /obj/item/ego_weapon/ranged/proc/akimbo_reload(mob/user)
 	is_reloading = TRUE
-	to_chat(user,span_danger("You being an akimbo reload..."))
+	to_chat(user,span_danger("You begin an akimbo reload..."))
 	var/total_reload = reloadtime
 
 	for(var/obj/item/ego_weapon/ranged/G in user.held_items)
 		if(G == src || G.weapon_weight >= WEAPON_MEDIUM || G.roundsreload)
 			continue
-		playsound(G, reload_start_sound, 25, TRUE)
-		total_reload+=G.reloadtime	// We're going to make sure that reloading akimbo is a bit slower.
+		var/correct_reload_time = (G.alternate_selected && G.alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD) ? G.alternate_reload_time : G.reloadtime
+		playsound(G, G.reload_start_sound, 25, TRUE)
+		total_reload+=correct_reload_time	// We're going to make sure that reloading akimbo is a bit slower.
 
 	total_reload *= 1.1	//About 10% slower
 
-
 	if(do_after(user, total_reload, src)) //gotta reload
-
 		for(var/obj/item/ego_weapon/ranged/G in user.held_items)
-			if(G.weapon_weight >= WEAPON_MEDIUM|| G.roundsreload)
+			if(G.weapon_weight >= WEAPON_MEDIUM || G.roundsreload)
 				continue
-			playsound(G, reload_success_sound, 25, TRUE)
+
+			playsound(G, G.reload_success_sound, 25, TRUE)
+
+			//Secondary mag is restored if the gun reloads each mag separately, and it's on the altfire mode
+			if(G.alternate_selected && G.alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD)
+				G.alternate_shotsleft = initial(G.alternate_shotsleft)
+				G.forced_melee = FALSE
+				is_reloading = FALSE
+				return
+
+			//Primary Mag is always restored at this point.
 			G.shotsleft = initial(G.shotsleft)
+
+			//If the gun has a shared reload, load it.
+			if(G.alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD)
+				G.alternate_shotsleft = initial(G.alternate_shotsleft)
+
 			G.forced_melee = FALSE //no longer forced to resort to melee
 
 	is_reloading = FALSE
 
-/obj/item/ego_weapon/ranged/proc/rounds_reload(mob/user)
-	if(shotsleft == initial(shotsleft))
-		return
+/obj/item/ego_weapon/ranged/proc/rounds_reload(mob/user, is_reloading_alt_mag = FALSE)
 	is_reloading = TRUE
+
+	if(((!is_reloading_alt_mag) && (shotsleft == initial(shotsleft))) || ((is_reloading_alt_mag) && (alternate_shotsleft == initial(alternate_shotsleft))))
+		is_reloading = FALSE
+		return
+
 	to_chat(user,"<span class='notice'>You start loading a bullet.</span>")
-	if(do_after(user, reloadtime, src)) //gotta reload
+	if(do_after(user, (is_reloading_alt_mag ? alternate_reload_time : reloadtime), src)) //gotta reload
 		playsound(src, reload_success_sound, 50, TRUE)
-		shotsleft +=1
-		INVOKE_ASYNC(src, PROC_REF(rounds_reload), user)	//To save you from loading all your bullets
+		if(is_reloading_alt_mag)
+			alternate_shotsleft +=1
+		else
+			shotsleft +=1
+		INVOKE_ASYNC(src, PROC_REF(rounds_reload), user, is_reloading_alt_mag)	//To save you from loading all your bullets
 	is_reloading = FALSE
 
 /obj/item/ego_weapon/ranged/equipped(mob/living/user, slot)
@@ -286,23 +426,90 @@
 
 //called after the gun has successfully fired its chambered ammo.
 /obj/item/ego_weapon/ranged/proc/process_chamber()
-	if(reloadtime && shotsleft)
-		shotsleft -= 1
+	if(!reloadtime) //You don't have ammo, no need to dump it
+		return
+
+	if(!alternate_selected && shotsleft)	//You're firing the main mag.
+		shotsleft--
+
+	//Are we in alternate fire?
+	if(alternate_selected)
+
+		//What type?
+		switch(alternate_reload_type)
+
+			//If it's two mags, we check if there's ammo in the alt mag
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD)
+				if(alternate_shotsleft && alternate_reload_time)
+					alternate_shotsleft--
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD)
+				if(alternate_shotsleft && alternate_reload_time)
+					alternate_shotsleft--
+
+			//If it's one mag, we lose a main bullet
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+				if(shotsleft && alternate_reload_time)
+					shotsleft--
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_MAGAZINE)
+				if(shotsleft && alternate_reload_time)
+					shotsleft--
+
+
 
 //check if there's enough ammo to shoot one time
 //i.e if clicking would make it shoot
 /obj/item/ego_weapon/ranged/proc/can_shoot()
-	if(reloadtime && !shotsleft)
+	if(is_reloading)
+		return FALSE
+
+	//Does the main mag not need ammo?
+	if(!reloadtime && !alternate_selected)
+		return TRUE
+
+	//Does the alt mag not need ammo?
+	if(!alternate_reload_time && alternate_selected)
+		return TRUE
+
+	//Are we firing regular bullets, it can reload and we have no shots left?
+	if(!alternate_selected && (reloadtime && !shotsleft))
 		visible_message(span_notice("The gun is out of ammo."))
 		shoot_with_empty_chamber()
 		return FALSE
 
-	if(is_reloading)
-		return FALSE
+	//Are we in alternate fire?
+	if(alternate_selected)
+
+		//What type?
+		switch(alternate_reload_type)
+
+			//If it's two mags, we check if there's ammo.
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD)
+				if(!alternate_shotsleft)
+					shoot_with_empty_chamber()
+					return FALSE
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_INDIVIDUAL_RELOAD)
+				if(!alternate_shotsleft)
+					shoot_with_empty_chamber()
+					return FALSE
+
+			//If it's one mag, we check the main mag.
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+				if(!shotsleft)
+					shoot_with_empty_chamber()
+					return FALSE
+
+			if(RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_MAGAZINE)
+				if(!shotsleft)
+					shoot_with_empty_chamber()
+					return FALSE
 
 	return TRUE
 
 /obj/item/ego_weapon/ranged/proc/shoot_with_empty_chamber(mob/living/user as mob|obj)
+	visible_message(span_notice("The gun is out of ammo."))
 	to_chat(user, span_danger("*click*"))
 	playsound(src, dry_fire_sound, 30, TRUE)
 
@@ -314,7 +521,10 @@
 	if(recoil)
 		shake_camera(user, recoil + 1, recoil)
 
-	playsound(user, fire_sound, fire_sound_volume, vary_fire_sound)
+	var/sfx = alternate_selected ? alternate_fire_sound : fire_sound
+	var/sfx_volume = alternate_selected ? alternate_fire_sound_volume : fire_sound_volume
+
+	playsound(user, sfx, sfx_volume, vary_fire_sound)
 	if(!message)
 		return
 

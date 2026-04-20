@@ -37,6 +37,7 @@
 		/obj/item/clothing/suit/armor/ego_gear/he/warp   			= /obj/item/clothing/suit/armor/ego_gear/realization/dimension_ripper,
 		/obj/item/clothing/suit/armor/ego_gear/he/aedd				= /obj/item/clothing/suit/armor/ego_gear/realization/experimentation,
 		/obj/item/clothing/suit/armor/ego_gear/he/prank				= /obj/item/clothing/suit/armor/ego_gear/realization/gift,
+		/obj/item/clothing/suit/armor/ego_gear/he/harmony			= /obj/item/clothing/suit/armor/ego_gear/realization/rhythm,
 		// WAW
 		/obj/item/clothing/suit/armor/ego_gear/waw/goldrush 		= /obj/item/clothing/suit/armor/ego_gear/realization/goldexperience,
 		/obj/item/clothing/suit/armor/ego_gear/waw/despair 			= /obj/item/clothing/suit/armor/ego_gear/realization/quenchedblood,
@@ -51,6 +52,7 @@
 		/obj/item/clothing/suit/armor/ego_gear/waw/discord			= /obj/item/clothing/suit/armor/ego_gear/realization/duality_yin,
 		/obj/item/clothing/suit/armor/ego_gear/waw/heart			= /obj/item/clothing/suit/armor/ego_gear/realization/repentance,
 		/obj/item/clothing/suit/armor/ego_gear/waw/exuviae			= /obj/item/clothing/suit/armor/ego_gear/realization/nest,
+		/obj/item/clothing/suit/armor/ego_gear/waw/contempt			= /obj/item/clothing/suit/armor/ego_gear/realization/awe,
 		// ALEPH
 		/obj/item/clothing/suit/armor/ego_gear/aleph/da_capo 		= /obj/item/clothing/suit/armor/ego_gear/realization/alcoda,
 		/obj/item/clothing/suit/armor/ego_gear/aleph/justitia 		= /obj/item/clothing/suit/armor/ego_gear/realization/head,
