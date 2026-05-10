@@ -108,6 +108,7 @@
 	var/alternate_reload_time = 0
 	var/alternate_projectile_path = /obj/projectile/ego_bullet/ego_knade
 	var/alternate_pellets = 1
+	var/alternate_variance = 0
 	var/alternate_fire_sound = 'sound/weapons/gun/general/grenade_launch.ogg'
 	var/alternate_fire_sound_volume = 50
 	var/alternate_toggle_sound = 'sound/machines/click.ogg'
@@ -392,6 +393,9 @@
 
 /obj/item/ego_weapon/ranged/proc/rounds_reload(mob/user, is_reloading_alt_mag = FALSE)
 	is_reloading = TRUE
+	//If it's only one mag type, you MUST load it.
+	if(alternate_reload_type == RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_EMPTY_MAG)
+		is_reloading_alt_mag = FALSE
 
 	if(((!is_reloading_alt_mag) && (shotsleft == initial(shotsleft))) || ((is_reloading_alt_mag) && (alternate_shotsleft == initial(alternate_shotsleft))))
 		is_reloading = FALSE
