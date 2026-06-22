@@ -41,7 +41,6 @@
 	pixel_x = 9;
 	pixel_y = 4
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/sepia,
 /area/facility_hallway/training)
 "as" = (
@@ -73,33 +72,25 @@
 /turf/open/floor/facility/dark,
 /area/department_main/information)
 "aE" = (
-/obj/structure/sign/departments/safety{
-	pixel_x = 32
-	},
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
-/area/department_main/command)
-"aH" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
+/obj/item/toy/plush/bigbird,
 /turf/open/floor/plating/ironsand{
 	density = 1;
 	name = "Outskirt"
 	},
 /area/space)
-"aJ" = (
-/obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 1
+"aH" = (
+/obj/effect/turf_decal/siding/red{
+	color = "#440000";
+	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 8
 	},
-/turf/open/floor/pod/dark,
-/area/department_main/training)
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring";
+	color = s
+	},
+/area/facility_hallway/control)
 "aK" = (
 /obj/effect/turf_decal/trimline/green/filled/warning,
 /obj/machinery/light{
@@ -285,14 +276,11 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "bu" = (
-/obj/structure/flora/rock/pile/largejungle,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
+/obj/machinery/door/airlock/wood{
+	name = "Discipline Office";
+	req_access_txt = "1"
 	},
-/turf/open/water,
+/turf/open/floor/plasteel/dark,
 /area/space)
 "by" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -328,11 +316,12 @@
 	},
 /area/department_main/command)
 "bG" = (
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/trimline/purple/filled,
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring"
 	},
-/area/department_main/command)
+/area/department_main/information)
 "bM" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -396,18 +385,12 @@
 	anchored = 1;
 	pixel_x = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "cb" = (
-/obj/effect/turf_decal/sand,
 /obj/structure/sign/ordealmonitor,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/obj/effect/turf_decal/sand,
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "cc" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -496,14 +479,11 @@
 	},
 /area/department_main/information)
 "cB" = (
-/obj/structure/disposalpipe/segment{
+/obj/machinery/computer/extraction_cargo/discipline{
 	dir = 4
 	},
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/control)
+/turf/open/floor/carpet/red,
+/area/space)
 "cC" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
@@ -571,16 +551,20 @@
 /turf/open/floor/facility/dark,
 /area/facility_hallway/command)
 "cW" = (
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 4
+/obj/machinery/computer/security/telescreen{
+	pixel_x = 20;
+	pixel_y = -2
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/computer/security/telescreen{
+	pixel_x = -20;
+	pixel_y = -2
 	},
-/turf/open/floor/pod/light,
-/area/department_main/information)
+/obj/machinery/computer/security/telescreen{
+	pixel_y = 1
+	},
+/turf/closed/indestructible/reinforced,
+/area/space)
 "cZ" = (
-/obj/structure/table/wood/fancy/green,
 /obj/item/paper_bin{
 	pixel_y = 6
 	},
@@ -589,21 +573,9 @@
 	pixel_x = -4;
 	pixel_y = 5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
+/obj/structure/table/wood/fancy/green,
 /turf/open/floor/pod/dark,
 /area/department_main/safety)
-"dd" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "de" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
@@ -676,23 +648,6 @@
 	density = 1
 	},
 /area/facility_hallway/human)
-"dH" = (
-/obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/effect/turf_decal/siding/brown{
-	color = "#422702";
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/training)
 "dM" = (
 /obj/effect/turf_decal/trimline/green/filled/warning{
 	dir = 5
@@ -723,13 +678,6 @@
 	color = "#c3bab0"
 	},
 /area/facility_hallway/human)
-"dS" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "dX" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -771,16 +719,15 @@
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
 "ee" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/trimline/purple/filled,
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/item/toy/plush/pbird{
+	pixel_x = -2;
+	pixel_y = 4
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
+/turf/open/floor/plating/ironsand{
+	density = 1;
+	name = "Outskirt"
 	},
-/area/facility_hallway/information)
+/area/space)
 "eg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -795,15 +742,6 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"ek" = (
-/obj/effect/turf_decal/trimline/red/filled/warning{
-	dir = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
 "el" = (
 /obj/effect/spawner/abnormality_room,
 /turf/closed/indestructible/reinforced{
@@ -812,11 +750,11 @@
 	},
 /area/facility_hallway/control)
 "em" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring";
+	color = #999999
 	},
-/turf/closed/mineral/ash_rock,
-/area/space)
+/area/facility_hallway/manager)
 "eo" = (
 /obj/effect/turf_decal/siding/red/corner{
 	color = "#440000";
@@ -861,24 +799,11 @@
 	},
 /area/department_main/command)
 "ey" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/turf/closed/indestructible/rock,
+/area/facility_hallway/safety)
 "eL" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Records Office Secure Area"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/facility/halls,
 /area/facility_hallway/information)
@@ -1007,7 +932,6 @@
 	pixel_y = 19;
 	resistance_flags = 115
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/sepia,
 /area/facility_hallway/training)
 "fu" = (
@@ -1043,12 +967,6 @@
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 5
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/pod/dark,
 /area/facility_hallway/training)
@@ -1059,7 +977,6 @@
 /turf/open/floor/pod/light,
 /area/facility_hallway/human)
 "ga" = (
-/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
@@ -1080,48 +997,12 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"gf" = (
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 4;
-	pixel_x = 9;
-	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/fat_sucker,
-/turf/open/floor/pod,
-/area/department_main/safety)
-"gi" = (
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/brown{
-	color = "#422702";
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/training)
 "gl" = (
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "gn" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
+/turf/closed/indestructible/fakeglass,
+/area/space)
 "gs" = (
 /obj/effect/spawner/abnormality_room,
 /turf/closed/indestructible/reinforced{
@@ -1141,20 +1022,8 @@
 	icon_state = "LC33"
 	},
 /obj/effect/turf_decal/sand,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
-"gF" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/information)
 "gG" = (
 /obj/structure/sign/ordealmonitor,
 /obj/effect/turf_decal/trimline/green/filled,
@@ -1223,35 +1092,9 @@
 	},
 /turf/open/floor/plasteel/sepia,
 /area/facility_hallway/training)
-"gN" = (
-/obj/structure/disposaloutlet{
-	dir = 8;
-	pixel_x = 7;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
-"gQ" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/information)
 "gS" = (
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 9
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
 	},
 /obj/effect/landmark/latejoin,
 /obj/machinery/camera{
@@ -1277,12 +1120,6 @@
 "gV" = (
 /obj/structure/chair/comfy/black,
 /obj/item/toy/plush/binah,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -1292,16 +1129,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/department_main/extraction)
-"gZ" = (
-/obj/effect/turf_decal/plaque{
-	alpha = 230;
-	icon_state = "LC24"
-	},
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
-/area/department_main/command)
 "ha" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1343,9 +1170,7 @@
 /area/department_main/control)
 "hh" = (
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "hk" = (
@@ -1354,13 +1179,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/information)
-"hn" = (
-/obj/machinery/door/airlock/glass{
-	icon = 'icons/obj/doors/airlocks/station/virology.dmi'
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/facility/halls,
-/area/facility_hallway/records)
 "ho" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 8
@@ -1396,10 +1214,6 @@
 	name = "facility wall"
 	},
 /area/facility_hallway/control)
-"hH" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/dark,
-/area/facility_hallway/records)
 "hJ" = (
 /obj/structure/sign/departments/control{
 	pixel_x = -32
@@ -1416,14 +1230,12 @@
 	},
 /area/facility_hallway/safety)
 "hM" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 9
+/obj/structure/chair/office,
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
+/turf/open/floor/carpet/red,
+/area/space)
 "hS" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -1472,17 +1284,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/safety)
-"ig" = (
-/obj/structure/disposaloutlet{
-	dir = 4;
-	pixel_x = -7;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
 "ii" = (
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 10
@@ -1507,16 +1308,9 @@
 	},
 /area/facility_hallway/human)
 "ip" = (
-/obj/structure/fence{
-	color = "#c3bab0";
-	desc = "Appears as a simple chain link fence. However a single touch will tell of its true intentions, to keep employees in and outskirt entities out.";
-	name = "electric fence";
-	resistance_flags = 115
-	},
-/turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	density = 1;
-	name = "Outskirt"
+/turf/closed/indestructible/reinforced{
+	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
+	name = "facility wall"
 	},
 /area/space)
 "ir" = (
@@ -1570,24 +1364,6 @@
 "iI" = (
 /turf/open/floor/pod/dark,
 /area/department_main/information)
-"iJ" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 4;
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
 "iN" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 10
@@ -1616,9 +1392,6 @@
 	},
 /obj/effect/turf_decal/arrows{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/pod,
 /area/facility_hallway/information)
@@ -1668,31 +1441,10 @@
 /turf/open/floor/pod/light,
 /area/facility_hallway/control)
 "iX" = (
-/obj/effect/turf_decal/sand/plating,
 /obj/structure/sign/ordealmonitor,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
-"ja" = (
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/brown{
-	color = "#422702";
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 4;
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/training)
 "jc" = (
 /obj/machinery/modular_computer/console/preset/research{
 	dir = 1;
@@ -1702,21 +1454,9 @@
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
 "jg" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/requests_console{
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/obj/machinery/holopad,
+/turf/open/floor/carpet/red,
+/area/space)
 "jh" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
@@ -1732,17 +1472,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/safety)
-"jy" = (
-/obj/structure/disposaloutlet{
-	dir = 8;
-	pixel_x = 7;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
 "jC" = (
 /obj/machinery/door/poddoor/shutters/window/preopen,
 /obj/effect/turf_decal/trimline/green/filled/warning{
@@ -1752,7 +1481,6 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/safety)
 "jE" = (
-/obj/structure/disposalpipe/segment,
 /obj/structure/window/reinforced/spawner/east{
 	density = 0;
 	pixel_x = 159;
@@ -1878,23 +1606,6 @@
 	},
 /turf/open/floor/pod,
 /area/facility_hallway/control)
-"kC" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/siding/red{
-	color = "#440000";
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/control)
 "kD" = (
 /obj/structure/chair/office{
 	anchored = 1;
@@ -1907,12 +1618,6 @@
 /obj/item/toy/plush/gebura,
 /turf/open/floor/pod/dark,
 /area/department_main/control)
-"kF" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/light,
-/area/department_main/information)
 "kI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1936,9 +1641,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "kO" = (
@@ -1987,64 +1690,10 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/human)
-"kU" = (
-/obj/effect/turf_decal/trimline/green/filled/warning{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/light,
-/area/department_main/safety)
-"kW" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/siding/red{
-	color = "#440000";
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/control)
 "kZ" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/arrows{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/door/window{
-	dir = 4;
-	resistance_flags = 115
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
-"la" = (
-/obj/effect/turf_decal/siding/purple/corner{
-	color = "#511c4b";
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 10
-	},
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/carpet/red,
+/area/space)
 "lb" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
@@ -2094,13 +1743,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/safety)
-"lk" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/records)
 "lm" = (
 /turf/closed/indestructible/fakeglass,
 /area/facility_hallway/control)
@@ -2112,7 +1754,6 @@
 	color = "#422702";
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/sign/departments/training{
 	pixel_x = 32
 	},
@@ -2133,21 +1774,10 @@
 /turf/open/floor/pod/dark,
 /area/department_main/information)
 "lt" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/safety)
+/obj/structure/table/glass,
+/obj/item/storage/bag/chemistry,
+/turf/open/floor/plasteel/white,
+/area/space)
 "lv" = (
 /obj/effect/turf_decal/plaque{
 	alpha = 230;
@@ -2187,9 +1817,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
 "lG" = (
@@ -2201,12 +1828,6 @@
 "lQ" = (
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/effect/landmark/department_center,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -2254,22 +1875,10 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/training)
-"lW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "lX" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Records Office Secure Area";
 	hackProof = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/facility/halls,
 /area/facility_hallway/information)
@@ -2527,25 +2136,6 @@
 /obj/item/food/meat/slab,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/training)
-"ml" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/turf/open/floor/plasteel/sepia,
-/area/facility_hallway/training)
 "mm" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning,
 /turf/open/floor/pod/dark,
@@ -2562,12 +2152,6 @@
 "my" = (
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 9
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
 	},
 /obj/effect/landmark/xeno_spawn,
 /obj/machinery/camera{
@@ -2588,12 +2172,6 @@
 	},
 /obj/effect/turf_decal/caution/white{
 	pixel_y = -1
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
 	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
@@ -2632,23 +2210,9 @@
 	},
 /area/facility_hallway/training)
 "mE" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/obj/structure/sign/departments/safety{
-	pixel_x = -32
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/safety)
+/obj/structure/table,
+/turf/open/floor/carpet/red,
+/area/space)
 "mH" = (
 /obj/effect/turf_decal/arrows/red{
 	dir = 1
@@ -2703,22 +2267,8 @@
 /turf/open/floor/pod,
 /area/department_main/training)
 "nh" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/turf/closed/indestructible/reinforced,
+/area/facility_hallway/control)
 "ni" = (
 /obj/effect/turf_decal/sand/plating{
 	color = "#c3bab0"
@@ -2792,9 +2342,6 @@
 /obj/effect/turf_decal/arrows{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/door/window{
 	dir = 4;
 	resistance_flags = 115
@@ -2829,9 +2376,6 @@
 "nH" = (
 /obj/effect/turf_decal/box,
 /obj/structure/toolabnormality/touch,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "nJ" = (
@@ -2839,9 +2383,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -2858,13 +2399,6 @@
 	},
 /obj/effect/turf_decal/arrows{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	resistance_flags = 115
 	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
@@ -2892,7 +2426,9 @@
 /turf/open/floor/pod/dark,
 /area/department_main/information)
 "nS" = (
-/turf/open/floor/plating/ironsand,
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring"
+	},
 /area/facility_hallway/manager)
 "nT" = (
 /obj/effect/turf_decal/bot,
@@ -2904,15 +2440,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/training)
-"nY" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "oa" = (
 /obj/effect/turf_decal/trimline/green/filled/line,
 /turf/open/floor/plasteel/bluespace{
@@ -2942,23 +2469,11 @@
 /obj/effect/turf_decal/arrows{
 	dir = 1
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /turf/open/floor/pod,
 /area/facility_hallway/control)
 "oi" = (
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/trimline/brown/filled,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -2993,18 +2508,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/information)
-"oq" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "green";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
 "os" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck,
@@ -3076,19 +2579,6 @@
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plasteel,
 /area/facility_hallway/human)
-"oC" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "oF" = (
 /obj/machinery/computer/operating{
 	dir = 8;
@@ -3124,20 +2614,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/facility_hallway/human)
-"oX" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/sepia,
-/area/facility_hallway/training)
 "pb" = (
 /obj/item/stack/refiner_filter/yellow{
 	pixel_x = 1;
@@ -3171,12 +2647,6 @@
 	dir = 5
 	},
 /obj/effect/landmark/department_center,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -3208,9 +2678,6 @@
 	},
 /obj/effect/turf_decal/loading_area{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
 	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
@@ -3247,22 +2714,6 @@
 /area/facility_hallway/records)
 "ps" = (
 /obj/effect/turf_decal/trimline/red/filled/warning,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
-"px" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "green";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "pz" = (
@@ -3282,9 +2733,6 @@
 /area/department_main/control)
 "pC" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
@@ -3343,14 +2791,16 @@
 /turf/open/floor/pod/dark,
 /area/department_main/control)
 "pK" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/structure/closet/crate/science/abnochem_startercrate,
+/obj/item/clothing/suit/armor/ego_gear/limbus_labs/chem{
+	name = "chemist labcoat"
 	},
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/department_main/safety)
+/obj/item/clothing/head/beret/tegu/chem,
+/obj/item/work_console_upgrade/chemical_extraction_attachment,
+/obj/item/work_console_upgrade/chemical_extraction_attachment,
+/obj/item/work_console_upgrade/chemical_extraction_attachment,
+/turf/open/floor/plasteel/white,
+/area/space)
 "pP" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/virology.dmi';
@@ -3631,9 +3081,6 @@
 	view_range = 13
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 1
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -3655,12 +3102,6 @@
 	},
 /area/facility_hallway/information)
 "rt" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -3695,8 +3136,7 @@
 /turf/open/floor/pod/light,
 /area/facility_hallway/control)
 "rD" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/mineral/ash_rock,
+/turf/closed/indestructible/reinforced,
 /area/space)
 "rI" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
@@ -3728,9 +3168,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
 /turf/open/floor/pod,
 /area/department_main/training)
 "rP" = (
@@ -3739,39 +3176,17 @@
 /turf/open/floor/plasteel,
 /area/facility_hallway/human)
 "rW" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 8
+/obj/machinery/door/airlock/glass{
+	name = "chemistry"
 	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/arrows{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
+/turf/open/floor/plasteel/white,
+/area/facility_hallway/safety)
+"sa" = (
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	resistance_flags = 115
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
-"sa" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/light,
-/area/department_main/control)
+/turf/open/floor/carpet/red,
+/area/space)
 "sd" = (
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
@@ -3883,16 +3298,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/training)
-"st" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "sw" = (
 /obj/machinery/door/airlock/glass{
 	icon = 'icons/obj/doors/airlocks/station/virology.dmi'
@@ -3944,12 +3349,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 9
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -3966,9 +3365,6 @@
 /obj/effect/turf_decal/siding/green{
 	color = "#006400";
 	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/safety)
@@ -3990,7 +3386,6 @@
 	short_range = 3;
 	view_range = 3
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/sepia,
 /area/facility_hallway/training)
 "sT" = (
@@ -4026,10 +3421,7 @@
 	icon_state = "LC28"
 	},
 /obj/effect/turf_decal/sand,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "tb" = (
 /obj/effect/turf_decal/plaque{
@@ -4060,9 +3452,7 @@
 "tg" = (
 /obj/machinery/facility_holomap,
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "tj" = (
@@ -4075,13 +3465,6 @@
 	color = "#ccc8c0"
 	},
 /area/facility_hallway/safety)
-"tn" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/information)
 "tq" = (
 /obj/structure/chair/office{
 	anchored = 1
@@ -4090,15 +3473,6 @@
 /obj/item/toy/plush/malkuth,
 /turf/open/floor/pod/dark,
 /area/department_main/control)
-"tr" = (
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "tw" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 1
@@ -4127,8 +3501,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/machinery/grill,
-/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/training)
 "tC" = (
@@ -4138,7 +3511,6 @@
 	pixel_x = -9;
 	pixel_y = 4
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/pod,
 /area/department_main/extraction)
 "tF" = (
@@ -4239,20 +3611,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/safety)
-"ug" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 10
-	},
-/obj/structure/sign/ordealmonitor{
-	pixel_x = 15;
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "uh" = (
 /turf/closed/indestructible/reinforced{
 	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
@@ -4266,26 +3624,10 @@
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 4
 	},
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 8
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
 /area/facility_hallway/training)
-"uk" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 10
-	},
-/obj/structure/sign/ordealmonitor{
-	pixel_x = 15;
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 1
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "un" = (
 /obj/structure/closet/crate/freezer/blood{
 	anchored = 1
@@ -4325,14 +3667,11 @@
 /turf/open/floor/pod,
 /area/department_main/safety)
 "ut" = (
-/obj/structure/sign/departments/training{
-	pixel_x = -32
+/obj/machinery/computer/extraction_cargo/chemistry{
+	dir = 8
 	},
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
-/area/department_main/command)
+/turf/open/floor/plasteel/white,
+/area/space)
 "uu" = (
 /obj/machinery/light{
 	dir = 8;
@@ -4347,9 +3686,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/department_main/training)
 "uA" = (
@@ -4364,11 +3700,8 @@
 	},
 /area/department_main/command)
 "uD" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
+/turf/closed/indestructible/reinforced,
+/area/facility_hallway/manager)
 "uG" = (
 /obj/structure/bodycontainer/crematorium{
 	dir = 4;
@@ -4459,19 +3792,6 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"vh" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "vk" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/siding/brown{
@@ -4511,26 +3831,15 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/information)
-"vx" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/department_main/training)
 "vy" = (
 /obj/machinery/door/airlock/glass_large{
 	name = "large airlock";
 	opacity = 1
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/facility/halls,
 /area/facility_hallway/training)
 "vE" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 1
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -4599,13 +3908,6 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/training)
-"vQ" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 6
-	},
-/turf/open/floor/pod,
-/area/department_main/training)
 "vY" = (
 /turf/closed/indestructible/reinforced{
 	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
@@ -4614,7 +3916,6 @@
 /area/facility_hallway/records)
 "wa" = (
 /obj/machinery/smartfridge/extraction_storage/ego_armor,
-/obj/structure/disposalpipe/segment,
 /turf/closed/indestructible/reinforced{
 	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
 	name = "facility wall";
@@ -4643,10 +3944,7 @@
 /area/facility_hallway/information)
 "wd" = (
 /obj/effect/turf_decal/sand/plating,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "wl" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner{
@@ -4699,21 +3997,9 @@
 	},
 /area/department_main/extraction)
 "ws" = (
-/obj/effect/turf_decal/siding/red{
-	color = "#440000";
-	dir = 1
-	},
-/obj/machinery/disposal/delivery_chute{
-	color = "#A46106";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
+/obj/structure/sign/departments/chemistry/pharmacy,
+/turf/closed/indestructible/reinforced,
+/area/facility_hallway/safety)
 "wv" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 10
@@ -4758,23 +4044,13 @@
 /obj/effect/turf_decal/arrows{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	resistance_flags = 115
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
 /area/facility_hallway/training)
 "wG" = (
 /obj/effect/turf_decal/sand,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "wK" = (
 /obj/effect/turf_decal/plaque{
@@ -4829,14 +4105,10 @@
 	},
 /area/department_main/command)
 "wP" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
+/obj/structure/rack,
+/obj/item/reagent_containers/hypospray/medipen/l_health,
+/obj/item/reagent_containers/hypospray/medipen/l_health,
+/turf/open/floor/plasteel/white,
 /area/space)
 "wQ" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner,
@@ -4979,9 +4251,6 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -5053,18 +4322,18 @@
 	},
 /area/facility_hallway/command)
 "xR" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 4
+/obj/structure/rack,
+/obj/machinery/camera/autoname{
+	dir = 1
 	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 8
+/obj/machinery/newscaster{
+	pixel_y = -32
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/obj/machinery/light,
+/obj/item/reagent_containers/hypospray/medipen/l_sanity,
+/obj/item/reagent_containers/hypospray/medipen/l_sanity,
+/turf/open/floor/plasteel/white,
+/area/space)
 "xT" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -5090,13 +4359,6 @@
 /obj/effect/turf_decal/arrows{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/window{
-	dir = 4;
-	resistance_flags = 115
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -5110,9 +4372,6 @@
 /obj/machinery/light{
 	dir = 1;
 	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/structure/sign/directions/evac{
 	dir = 1;
@@ -5141,11 +4400,12 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "yj" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod,
-/area/department_main/safety)
+/obj/structure/closet,
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/beakers,
+/turf/open/floor/plasteel/white,
+/area/space)
 "yk" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -5157,9 +4417,6 @@
 	dir = 8;
 	pixel_x = -9;
 	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
 	},
 /turf/open/floor/pod,
 /area/facility_hallway/information)
@@ -5188,23 +4445,8 @@
 /area/facility_hallway/training)
 "yr" = (
 /obj/effect/turf_decal/trimline/purple/filled/corner,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
-"ys" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "#A46106";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "yt" = (
 /obj/effect/turf_decal/siding/red{
 	color = "#440000";
@@ -5212,22 +4454,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/control)
-"yu" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel/sepia,
-/area/facility_hallway/training)
 "yx" = (
 /obj/effect/turf_decal/siding/brown{
 	color = "#422702";
@@ -5251,7 +4477,6 @@
 	pixel_x = 15;
 	pixel_y = 16
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -5292,29 +4517,12 @@
 "yQ" = (
 /obj/effect/turf_decal/box,
 /obj/structure/toolabnormality/realization,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
-"yS" = (
-/obj/effect/turf_decal/trimline/brown/filled/corner,
-/obj/machinery/disposal/delivery_chute{
-	color = "purple";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/training)
 "yY" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 9
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -5350,12 +4558,6 @@
 	},
 /obj/effect/turf_decal/sand,
 /obj/effect/landmark/department_center,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/observer_start,
 /obj/machinery/camera/autoname{
 	alpha = 0;
@@ -5378,12 +4580,6 @@
 	},
 /area/department_main/command)
 "zf" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -5438,12 +4634,6 @@
 /turf/open/floor/pod/dark,
 /area/department_main/information)
 "zt" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -5481,13 +4671,6 @@
 /obj/effect/turf_decal/arrows{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	resistance_flags = 115
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -5512,15 +4695,6 @@
 "zH" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/pod/light,
 /area/facility_hallway/information)
@@ -5745,9 +4919,6 @@
 /obj/effect/turf_decal/trimline/green/filled,
 /obj/structure/fans/tiny,
 /obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -5761,18 +4932,6 @@
 	opacity = 0
 	},
 /area/facility_hallway/training)
-"AS" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "purple";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/safety)
 "AV" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 10
@@ -5786,9 +4945,6 @@
 /area/facility_hallway/safety)
 "AY" = (
 /obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
 "Bb" = (
@@ -5799,16 +4955,12 @@
 /turf/open/floor/pod/light,
 /area/facility_hallway/control)
 "Bf" = (
-/obj/structure/disposaloutlet{
-	dir = 4;
-	pixel_x = -7;
-	resistance_flags = 115
+/obj/item/toy/plush/jbird,
+/turf/open/floor/plating/ironsand{
+	density = 1;
+	name = "Outskirt"
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/training)
+/area/space)
 "Bh" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
@@ -5816,16 +4968,8 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/human)
 "Bi" = (
-/obj/machinery/sleeper/syndie{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod,
-/area/department_main/safety)
+/turf/open/floor/plasteel/white,
+/area/space)
 "Bl" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 4
@@ -5861,12 +5005,6 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/arrows{
 	dir = 1
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
 	},
 /obj/machinery/camera{
 	alpha = 0;
@@ -5914,12 +5052,6 @@
 /obj/effect/turf_decal/trimline/green/filled/warning{
 	dir = 9
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/pod/dark,
 /area/facility_hallway/safety)
@@ -5966,13 +5098,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/training)
-"Cq" = (
-/obj/effect/turf_decal/trimline/red/filled/warning,
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
 "Ct" = (
 /obj/effect/turf_decal/sand,
 /obj/structure/disposalpipe/segment{
@@ -6000,9 +5125,6 @@
 	dir = 1;
 	pixel_y = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/sign/directions/evac{
 	dir = 4;
 	pixel_x = 4;
@@ -6013,18 +5135,19 @@
 	},
 /area/facility_hallway/information)
 "CD" = (
-/obj/effect/turf_decal/trimline/red/filled/warning{
-	dir = 10
+/obj/structure/table/glass,
+/obj/item/hand_labeler,
+/obj/item/hand_labeler_refill,
+/obj/item/hand_labeler_refill,
+/obj/item/clothing/glasses/science{
+	pixel_y = -3
 	},
-/obj/structure/sign/ordealmonitor{
-	pixel_x = 15;
-	pixel_y = 16
+/obj/item/clothing/glasses/science,
+/obj/item/clothing/glasses/science{
+	pixel_y = 3
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/control)
+/turf/open/floor/plasteel/white,
+/area/space)
 "CE" = (
 /obj/machinery/vending/coffee{
 	pixel_y = 14
@@ -6047,21 +5170,12 @@
 	density = 0;
 	pixel_y = 19
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
 /area/facility_hallway/control)
 "CK" = (
-/obj/structure/sign/departments/info{
-	pixel_x = 32
-	},
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "CM" = (
 /obj/machinery/modular_computer/console/preset/research{
@@ -6070,13 +5184,6 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
-"CT" = (
-/obj/structure/chair/sofa/corp/right,
-/obj/item/wallframe/painting{
-	pixel_y = 26
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/human)
 "CX" = (
 /obj/structure/filingcabinet{
 	pixel_x = -10;
@@ -6101,12 +5208,9 @@
 /turf/open/floor/pod/light,
 /area/department_main/control)
 "De" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/department_main/safety)
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/space)
 "Dj" = (
 /obj/effect/turf_decal/trimline/red/filled,
 /obj/structure/fans/tiny,
@@ -6114,15 +5218,6 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/control)
-"Dk" = (
-/obj/structure/sign/departments/info{
-	pixel_x = -32
-	},
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
-/area/department_main/command)
 "Dp" = (
 /obj/structure/refinery,
 /obj/effect/turf_decal/box,
@@ -6232,12 +5327,6 @@
 /turf/open/floor/pod/light,
 /area/facility_hallway/information)
 "DQ" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/turf_decal/stripes/white/line,
 /obj/machinery/camera{
 	alpha = 0;
@@ -6262,9 +5351,6 @@
 "DS" = (
 /obj/effect/turf_decal/arrows{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
@@ -6291,17 +5377,12 @@
 /turf/open/floor/pod/light,
 /area/department_main/information)
 "Ea" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
+/obj/effect/turf_decal/trimline/red/filled,
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/pod/light,
-/area/facility_hallway/control)
+/area/department_main/control)
 "Ec" = (
 /turf/closed/indestructible/reinforced{
 	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
@@ -6329,7 +5410,6 @@
 /area/department_main/command)
 "Ej" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -6347,21 +5427,6 @@
 	name = "facility wall"
 	},
 /area/facility_hallway/manager)
-"Ex" = (
-/obj/effect/turf_decal/trimline/brown/filled/corner{
-	dir = 4
-	},
-/obj/machinery/disposal/delivery_chute{
-	color = "red";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/training)
 "Ey" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -6381,9 +5446,6 @@
 	dir = 4;
 	pixel_x = 9;
 	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/records)
@@ -6427,10 +5489,7 @@
 	icon_state = "LC4"
 	},
 /obj/effect/turf_decal/sand,
-/turf/open/floor/plating/ironsand{
-	name = "anomalous sand";
-	slowdown = -0.3
-	},
+/turf/open/floor/plating/ironsand,
 /area/department_main/command)
 "ES" = (
 /obj/effect/turf_decal/trimline/red/filled/warning{
@@ -6470,55 +5529,18 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/training)
-"Ff" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "#A46106";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "Fg" = (
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
 /turf/open/floor/pod,
 /area/facility_hallway/control)
 "Fi" = (
-/obj/effect/turf_decal/siding/purple{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
-"Fj" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/siding/red{
-	color = "#440000";
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/requests_console{
-	pixel_y = 24
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/control)
+/turf/open/floor/carpet/red,
+/area/space)
 "Fm" = (
 /obj/effect/turf_decal/siding/purple{
 	color = "#511c4b";
@@ -6541,12 +5563,6 @@
 /turf/open/floor/pod/dark,
 /area/department_main/information)
 "Fo" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -6664,9 +5680,6 @@
 	pixel_x = 6
 	},
 /obj/item/toy/plush/nihil,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "FE" = (
@@ -6759,12 +5772,6 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 5
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -6781,12 +5788,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -6794,20 +5795,12 @@
 	short_range = 13;
 	view_range = 13
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/facility_hallway/information)
 "Gt" = (
-/obj/effect/turf_decal/trimline/red/filled/warning{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/pod,
-/area/facility_hallway/control)
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/safety)
 "Gv" = (
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 8
@@ -6841,12 +5834,9 @@
 	},
 /area/facility_hallway/information)
 "GB" = (
-/obj/structure/chair/sofa/corp/left,
-/obj/item/wallframe/painting{
-	pixel_y = 26
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/human)
+/obj/machinery/chem_master,
+/turf/open/floor/plasteel/white,
+/area/space)
 "GI" = (
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/structure/disposalpipe/junction/flip{
@@ -6854,18 +5844,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/safety)
-"GL" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "red";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/safety)
 "GN" = (
 /obj/effect/turf_decal/siding/brown{
 	color = "#422702";
@@ -6884,12 +5862,6 @@
 	},
 /area/facility_hallway/command)
 "GP" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -6935,12 +5907,6 @@
 "GU" = (
 /obj/effect/turf_decal/trimline/green/filled,
 /obj/structure/fans/tiny,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -6951,18 +5917,6 @@
 /area/facility_hallway/safety)
 "GV" = (
 /turf/open/floor/plating,
-/area/facility_hallway/control)
-"Hc" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/siding/red{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
 /area/facility_hallway/control)
 "Hf" = (
 /obj/effect/turf_decal/siding/purple/corner{
@@ -6979,9 +5933,6 @@
 "Hj" = (
 /obj/effect/turf_decal/trimline/green/filled,
 /obj/structure/fans/tiny,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
@@ -7013,14 +5964,6 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/safety)
-"Hp" = (
-/obj/effect/landmark/salesspawn,
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/department_main/extraction)
 "Hs" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/turf_decal/stripes/white/line{
@@ -7028,14 +5971,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/human)
-"HA" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "HB" = (
 /obj/machinery/computer/crew{
 	dir = 1;
@@ -7085,15 +6020,6 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"HI" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/pod/light,
-/area/facility_hallway/information)
 "HL" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -7158,17 +6084,11 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 10
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
 "Ia" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/pod/light,
 /area/department_main/control)
@@ -7178,12 +6098,6 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/caution/stand_clear/red,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /turf/open/floor/facility/white,
 /area/facility_hallway/manager)
 "If" = (
@@ -7226,15 +6140,15 @@
 /turf/open/floor/plating,
 /area/facility_hallway/safety)
 "Im" = (
-/obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 1
+/obj/item/toy/plush/myo{
+	pixel_x = 7;
+	pixel_y = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/turf/open/floor/plating/ironsand{
+	density = 1;
+	name = "Outskirt"
 	},
-/turf/open/floor/pod/dark,
-/area/department_main/training)
+/area/space)
 "Ir" = (
 /obj/machinery/disposal/bin{
 	density = 0;
@@ -7253,20 +6167,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/department_main/control)
-"Iv" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/arrows,
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 19
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/pod,
-/area/facility_hallway/information)
 "Iw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -7332,12 +6232,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7349,12 +6243,6 @@
 	dir = 9
 	},
 /obj/effect/landmark/department_center,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -7364,9 +6252,6 @@
 	},
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 1
-	},
-/mob/living/simple_animal/bot/cleanbot{
-	desc = "Even in death, a clerk does their job."
 	},
 /obj/machinery/navbeacon/wayfinding/informationdepartment,
 /turf/open/floor/pod/light,
@@ -7393,7 +6278,6 @@
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/training)
 "IU" = (
-/obj/structure/disposalpipe/segment,
 /obj/structure/window/reinforced/spawner/west{
 	density = 0;
 	max_integrity = 25;
@@ -7474,9 +6358,7 @@
 	pixel_y = 19
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "Jv" = (
@@ -7552,9 +6434,6 @@
 "Ka" = (
 /obj/effect/turf_decal/trimline/red/filled,
 /obj/structure/fans/tiny,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
@@ -7582,12 +6461,6 @@
 /obj/effect/turf_decal/arrows{
 	dir = 4
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -7611,32 +6484,19 @@
 /turf/open/floor/pod/light,
 /area/department_main/safety)
 "Kp" = (
-/obj/effect/turf_decal/trimline/brown/filled/warning{
-	dir = 9
+/obj/machinery/computer/security/telescreen{
+	pixel_x = -8;
+	pixel_y = -5
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/dark,
-/area/facility_hallway/training)
+/turf/closed/indestructible/reinforced,
+/area/space)
 "Kt" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 8;
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/chair/sofa/corp{
 	dir = 1
 	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/safety)
+/obj/machinery/light,
+/turf/open/floor/carpet/red,
+/area/space)
 "Ku" = (
 /obj/effect/turf_decal/sand,
 /obj/machinery/camera/xray{
@@ -7665,9 +6525,7 @@
 	pixel_y = 20
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "KC" = (
@@ -7707,18 +6565,6 @@
 	},
 /turf/open/floor/pod,
 /area/department_main/control)
-"KP" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "green";
-	dir = 8;
-	pixel_x = 8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "KS" = (
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
@@ -7728,13 +6574,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
-"La" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
-/area/facility_hallway/training)
 "Lf" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 5
@@ -7745,14 +6584,12 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "Lg" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/light,
-/area/facility_hallway/information)
+/obj/structure/table/glass,
+/obj/machinery/light,
+/obj/item/storage/box/pillbottles,
+/obj/item/storage/box/pillbottles,
+/turf/open/floor/plasteel/white,
+/area/space)
 "Lj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -7774,29 +6611,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/training)
-"Ln" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/plasteel/sepia,
-/area/facility_hallway/training)
-"Lv" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/light,
-/area/facility_hallway/control)
 "Lw" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/virology.dmi';
@@ -7806,23 +6620,13 @@
 	},
 /turf/open/floor/facility/halls,
 /area/facility_hallway/safety)
-"Lx" = (
-/obj/effect/landmark/toolspawn,
-/obj/effect/turf_decal/box/white,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/facility/dark,
-/area/facility_hallway/records)
 "LB" = (
-/obj/structure/disposaloutlet{
-	dir = 8;
-	pixel_x = 7;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/safety)
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen/fourcolor,
+/obj/item/reagent_containers/hypospray/medipen/l_mixed,
+/turf/open/floor/carpet/red,
+/area/space)
 "LC" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/trimline/green/filled/warning{
@@ -7854,22 +6658,12 @@
 /obj/effect/turf_decal/arrows{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/obj/machinery/door/window{
-	dir = 4;
-	resistance_flags = 115
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
 /area/facility_hallway/safety)
 "LN" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/control)
 "LP" = (
@@ -7916,32 +6710,13 @@
 	},
 /area/department_main/command)
 "LV" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 8
+/obj/structure/window/reinforced/fulltile{
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 70);
+	max_integrity = 500;
+	opacity = 1
 	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 8;
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
-"LX" = (
-/obj/structure/disposalpipe/junction/flip,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
+/turf/open/floor/facility/halls,
+/area/department_main/information)
 "Md" = (
 /obj/structure/table/reinforced{
 	resistance_flags = 115
@@ -7971,9 +6746,6 @@
 "Mj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
 	},
 /obj/structure/sign/button_counter/directional/east,
 /turf/open/floor/pod/light,
@@ -8049,8 +6821,10 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "Mz" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/obj/structure/pbird_perch{
+	desc = "A thin tree with wood dark as charcoal. Towards the base of the tree hangs a shark toothed necklace. Something prevents you from removing the necklace from the tree.";
+	pixel_x = 1;
+	pixel_y = 2
 	},
 /turf/open/floor/plating/ironsand{
 	density = 1;
@@ -8058,19 +6832,8 @@
 	},
 /area/space)
 "MC" = (
-/obj/structure/fence{
-	desc = "Appears as a simple chain link fence. However a single touch will tell of its true intentions, to keep employees in and outskirt entities out.";
-	name = "electric fence";
-	resistance_flags = 115
-	},
-/obj/structure/fluff/big_chain{
-	alpha = 0;
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/turf/open/space/basic,
 /area/space)
 "MH" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
@@ -8103,9 +6866,6 @@
 /area/facility_hallway/control)
 "MM" = (
 /obj/effect/turf_decal/trimline/purple/filled/end,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/pod/light,
 /area/department_main/information)
@@ -8193,29 +6953,22 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
 /area/facility_hallway/information)
 "Nr" = (
-/obj/machinery/camera{
-	alpha = 0;
-	mouse_opacity = 0;
-	name = "hidden security camera";
-	short_range = 3;
-	view_range = 3
+/obj/effect/turf_decal/trimline/green/filled/line,
+/obj/effect/turf_decal/siding/green{
+	dir = 1
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
+/obj/machinery/requests_console{
+	pixel_y = 24
 	},
-/turf/open/floor/pod/light,
-/area/facility_hallway/information)
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring"
+	},
+/area/facility_hallway/safety)
 "Ns" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 5
@@ -8233,17 +6986,15 @@
 /turf/open/floor/pod/light,
 /area/department_main/information)
 "Nw" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
+/obj/item/toy/plush/rabbit{
+	pixel_x = -16;
+	pixel_y = -5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/turf/open/floor/plating/ironsand{
+	density = 1;
+	name = "Outskirt"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/pod/light,
-/area/facility_hallway/control)
+/area/space)
 "Ny" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 4
@@ -8272,9 +7023,6 @@
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -8283,17 +7031,12 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/control)
 "NE" = (
 /obj/item/toy/plush/lisa,
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "NF" = (
@@ -8359,9 +7102,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "Ob" = (
@@ -8435,16 +7176,15 @@
 /turf/open/floor/pod,
 /area/department_main/information)
 "Op" = (
-/obj/structure/disposaloutlet{
-	dir = 4;
-	pixel_x = -7;
-	resistance_flags = 115
+/obj/item/toy/plush/rabbit{
+	pixel_x = 0;
+	pixel_y = 4
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
+/turf/open/floor/plating/ironsand{
+	density = 1;
+	name = "Outskirt"
 	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
+/area/space)
 "Oq" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/brown{
@@ -8481,9 +7221,6 @@
 "Oy" = (
 /obj/effect/turf_decal/trimline/purple/filled/corner{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
@@ -8537,31 +7274,13 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/facility_hallway/control)
-"OQ" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/pod/light,
-/area/facility_hallway/information)
-"OR" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall";
-	opacity = 0
-	},
-/area/facility_hallway/training)
 "OS" = (
-/obj/machinery/door/window,
-/obj/effect/turf_decal/caution/white{
-	pixel_y = -1
+/obj/machinery/computer/security/telescreen{
+	pixel_x = 8;
+	pixel_y = -6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/records)
+/turf/closed/indestructible/reinforced,
+/area/space)
 "OX" = (
 /obj/machinery/disposal/bin{
 	density = 0;
@@ -8613,9 +7332,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 10
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/pod/light,
 /area/department_main/information)
@@ -8654,17 +7370,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/control)
-"Pq" = (
-/obj/structure/window/reinforced/fulltile{
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 70);
-	max_integrity = 500;
-	opacity = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/facility/halls,
-/area/department_main/training)
 "Pt" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/trimline/purple/filled/warning,
@@ -8716,7 +7421,7 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "PH" = (
-/turf/closed/mineral/ash_rock,
+/turf/open/floor/carpet/red,
 /area/space)
 "PN" = (
 /obj/effect/turf_decal/caution/stand_clear/white,
@@ -8743,9 +7448,6 @@
 	color = "#006400";
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
 /obj/structure/sign/departments/safety{
 	pixel_x = -32
 	},
@@ -8759,12 +7461,6 @@
 	dir = 1
 	},
 /obj/machinery/processor,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -8800,16 +7496,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/training)
-"Qc" = (
-/obj/effect/turf_decal/trimline/purple/filled/warning{
-	dir = 6
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "Qe" = (
 /obj/effect/turf_decal/siding/brown{
 	color = "#422702";
@@ -8832,12 +7518,6 @@
 "Ql" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
-	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
 	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
@@ -8867,9 +7547,6 @@
 /obj/structure/table/reinforced,
 /obj/item/kirbyplants/dead{
 	pixel_y = 13
-	},
-/obj/item/wallframe/painting{
-	pixel_y = 26
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/human)
@@ -8904,9 +7581,6 @@
 	},
 /obj/effect/turf_decal/loading_area{
 	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
@@ -8964,12 +7638,6 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 5
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/latejoin,
 /obj/machinery/camera{
 	alpha = 0;
@@ -8993,21 +7661,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/training)
-"QO" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/green{
-	color = "#006400";
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/safety)
 "QU" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -9100,29 +7753,9 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
-"Rt" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/machinery/vending/snack/blue{
-	density = 0;
-	pixel_y = 19
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
 "Ru" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
 	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
@@ -9140,24 +7773,6 @@
 	name = "facility wall"
 	},
 /area/facility_hallway/human)
-"Ry" = (
-/obj/effect/turf_decal/siding/purple/corner{
-	color = "#511c4b";
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
 "RC" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 10
@@ -9227,7 +7842,6 @@
 "RO" = (
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/trimline/brown/filled,
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -9238,9 +7852,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/sign/directions/evac{
 	dir = 1;
 	pixel_x = -3;
@@ -9314,12 +7925,6 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 5
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/effect/landmark/xeno_spawn,
 /obj/machinery/camera{
 	alpha = 0;
@@ -9333,15 +7938,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
-"SG" = (
-/obj/effect/turf_decal/trimline/green/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/safety)
 "SK" = (
 /turf/open/floor/plating,
 /area/facility_hallway/information)
@@ -9375,20 +7971,6 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/control)
-"SS" = (
-/obj/effect/turf_decal/sand/plating,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel{
-	name = "anomalous floor";
-	slowdown = -0.3
-	},
-/area/department_main/command)
 "SU" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/facility_hallway/manager)
@@ -9416,15 +7998,6 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"Te" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/light,
-/area/department_main/control)
 "Tf" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
@@ -9443,19 +8016,9 @@
 	},
 /area/facility_hallway/command)
 "Tn" = (
-/obj/effect/turf_decal/sand,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel{
-	name = "anomalous floor";
-	slowdown = -0.3
-	},
-/area/department_main/command)
+/obj/structure/closet/secure_closet/discipline,
+/turf/open/floor/carpet/red,
+/area/space)
 "Tq" = (
 /obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/tile/green,
@@ -9470,23 +8033,6 @@
 	},
 /turf/open/floor/plasteel/sepia,
 /area/facility_hallway/training)
-"Tr" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/arrows{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 4;
-	pixel_x = 9;
-	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/pod,
-/area/facility_hallway/information)
 "Tt" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/caution/stand_clear/white{
@@ -9542,15 +8088,6 @@
 	color = "#440000";
 	dir = 1
 	},
-/obj/machinery/disposal/delivery_chute{
-	color = "#A46106";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
 /turf/open/floor/pod/dark,
 /area/facility_hallway/control)
 "TO" = (
@@ -9569,11 +8106,6 @@
 	name = "secure flooring"
 	},
 /area/facility_hallway/safety)
-"TR" = (
-/obj/machinery/door/airlock/glass,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/facility/halls,
-/area/facility_hallway/control)
 "TW" = (
 /obj/effect/turf_decal/box/red,
 /obj/structure/closet/crate/trashcart,
@@ -9617,15 +8149,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/information)
-"Uf" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "Ui" = (
 /obj/machinery/telecomms/message_server/preset,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -9638,7 +8161,6 @@
 /obj/item/pen/fountain/captain{
 	name = "lobotomy corp issued fountain pen"
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -9715,35 +8237,6 @@
 /obj/item/toy/cards/deck,
 /turf/open/floor/carpet/orange,
 /area/department_main/training)
-"UF" = (
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/brown{
-	color = "#422702";
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/training)
-"UG" = (
-/obj/effect/turf_decal/trimline/brown/filled/warning{
-	dir = 10
-	},
-/obj/structure/sign/ordealmonitor{
-	pixel_x = 15;
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/training)
 "UI" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/trimline/brown/filled/warning{
@@ -9768,9 +8261,6 @@
 	view_range = 13
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 1
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -9793,7 +8283,6 @@
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -9808,24 +8297,11 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"UV" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "Va" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/effect/turf_decal/siding/red{
 	color = "#440000";
 	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/structure/sign/departments/control{
 	pixel_y = 32
@@ -9855,17 +8331,6 @@
 	color = "#c3bab0"
 	},
 /area/facility_hallway/human)
-"Vn" = (
-/obj/structure/window/reinforced/fulltile{
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 70);
-	max_integrity = 500;
-	opacity = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/facility/halls,
-/area/department_main/control)
 "Vo" = (
 /obj/effect/turf_decal/siding/red{
 	color = "#440000";
@@ -9933,9 +8398,6 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plasteel/bluespace{
@@ -9974,9 +8436,6 @@
 	dir = 1;
 	pixel_y = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/sign/directions/evac{
 	dir = 4;
 	pixel_y = 32
@@ -10002,13 +8461,6 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"We" = (
-/obj/structure/disposalpipe/junction,
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "Wi" = (
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/facility/halls,
@@ -10036,22 +8488,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/effect/landmark/refinerspawn,
 /turf/open/floor/carpet/orange,
 /area/department_main/training)
-"WA" = (
-/obj/machinery/disposal/delivery_chute{
-	color = "green";
-	dir = 4;
-	pixel_x = -8;
-	resistance_flags = 115
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/pod/dark,
-/area/facility_hallway/information)
 "WD" = (
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/effect/turf_decal/trimline/green/filled/warning{
@@ -10137,40 +8576,21 @@
 	name = "Outskirt"
 	},
 /area/space)
-"WV" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/closed/mineral/ash_rock,
-/area/space)
 "WZ" = (
 /obj/machinery/vending/cigarette{
 	density = 0;
 	pixel_y = 19
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "Xa" = (
-/turf/open/floor/plating/ironsand{
+/turf/open/floor/plasteel/bluespace{
+	name = "secure flooring";
 	color = "#c3bab0"
 	},
 /area/facility_hallway/manager)
-"Xe" = (
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "Xj" = (
 /obj/structure/closet/crate/freezer/surplus_limbs{
 	anchored = 1
@@ -10188,9 +8608,6 @@
 /turf/open/floor/pod,
 /area/department_main/safety)
 "Xk" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/pod/light,
 /area/department_main/control)
 "Xq" = (
@@ -10230,10 +8647,6 @@
 	dir = 4;
 	pixel_x = 9;
 	pixel_y = 4
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/item/reagent_containers/hypospray/medipen/salacid{
 	pixel_y = 4
@@ -10313,12 +8726,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 5
 	},
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -10332,8 +8739,11 @@
 /turf/open/floor/pod/dark,
 /area/facility_hallway/information)
 "XG" = (
-/obj/structure/disposalpipe/segment{
-	dir = 6
+/obj/structure/firetree{
+	name = "Scorched Tree";
+	pixel_x = -33;
+	pixel_y = 7;
+	desc = "A burnt tree created by the scorching sun of the Outskirts. Looking at it makes you sweat."
 	},
 /turf/open/floor/plating/ironsand{
 	density = 1;
@@ -10401,45 +8811,9 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
-"Ya" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/siding/red{
-	color = "#440000";
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/control)
 "Yb" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/closed/indestructible/reinforced{
-	desc = "A huge chunk of wing-grade metal used in various L corporation facilities. Effectively impervious to conventional methods of destruction.";
-	name = "facility wall"
-	},
+/turf/closed/indestructible/reinforced,
 /area/facility_hallway/safety)
-"Yc" = (
-/obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/effect/turf_decal/siding/brown{
-	color = "#422702";
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/training)
 "Yd" = (
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/trimline/purple/filled,
@@ -10488,7 +8862,6 @@
 	pixel_x = 9;
 	pixel_y = 4
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/pod/dark,
 /area/facility_hallway/records)
 "Ym" = (
@@ -10559,9 +8932,6 @@
 	dir = 1;
 	pixel_y = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -10581,20 +8951,8 @@
 	},
 /area/facility_hallway/training)
 "YT" = (
-/obj/effect/turf_decal/siding/purple{
-	color = "#511c4b";
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/purple/filled/line{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/bluespace{
-	name = "secure flooring"
-	},
-/area/facility_hallway/information)
+/turf/closed/indestructible/rock,
+/area/facility_hallway/training)
 "YV" = (
 /obj/effect/turf_decal/trimline/purple/filled/warning{
 	dir = 9
@@ -10628,9 +8986,6 @@
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 6
 	},
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 4
-	},
 /turf/open/floor/plasteel/bluespace{
 	name = "secure flooring"
 	},
@@ -10639,12 +8994,6 @@
 /obj/effect/turf_decal/trimline/red/filled,
 /obj/structure/fans/tiny,
 /obj/effect/landmark/department_center,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
 /obj/machinery/camera/autoname{
 	alpha = 0;
 	mouse_opacity = 0;
@@ -10706,25 +9055,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/facility_hallway/manager)
-"Zz" = (
-/obj/effect/turf_decal/sand,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/turf/open/floor/plasteel,
-/area/facility_hallway/manager)
 "ZA" = (
 /obj/machinery/vending/lobotomyuniform{
 	density = 0;
 	pixel_y = 19
 	},
 /turf/open/floor/plating/ironsand{
-	color = "#c3bab0";
-	name = "anomalous sand";
-	slowdown = -0.3
+	color = "#c3bab0"
 	},
 /area/department_main/command)
 "ZB" = (
@@ -10732,9 +9069,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/arrows{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/pod,
@@ -10763,19 +9097,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/facility_hallway/information)
-"ZF" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/light_emitter{
-	light_power = 4;
-	light_range = 25;
-	set_cap = 3;
-	set_luminosity = 24
-	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
-/area/space)
 "ZJ" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/security.dmi';
@@ -10815,9 +9136,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/purple/filled/line,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/sign/departments/info{
 	pixel_y = 32
 	},
@@ -33088,18 +31406,18 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -33343,14 +31661,14 @@ wo
 wo
 wo
 wo
+wo
+wo
 WO
 WO
 WO
 WO
 WO
 WO
-WO
-Xe
 WO
 WO
 WO
@@ -33600,14 +31918,14 @@ wo
 wo
 wo
 wo
-PH
-PH
-aL
+wo
+wo
 WO
 WO
 WO
 WO
 WO
+XG
 WO
 WO
 WO
@@ -33859,7 +32177,7 @@ oz
 oz
 oz
 oz
-PH
+aL
 aL
 WO
 WO
@@ -34108,15 +32426,15 @@ qh
 Np
 Ze
 oz
+YT
+YT
+YT
 oz
-oz
-oz
-cR
 YO
 Qu
 Sm
 oz
-PH
+aL
 aL
 Fy
 WO
@@ -34365,15 +32683,15 @@ qh
 WT
 Ze
 oz
-RR
-RR
-RR
 oz
+oz
+oz
+cR
 WN
 Np
 Ze
 oz
-PH
+aL
 aL
 WO
 xI
@@ -34897,7 +33215,7 @@ KF
 uJ
 WO
 WO
-WO
+XG
 WO
 wo
 wo
@@ -35108,25 +33426,25 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 oz
 RR
 RR
@@ -35364,12 +33682,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -35621,12 +33939,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -35650,9 +33968,9 @@ xc
 WT
 Ze
 oz
-oz
-oz
-oz
+RR
+RR
+RR
 oz
 qh
 lG
@@ -35679,8 +33997,7 @@ nO
 nO
 nO
 nO
-PH
-PH
+aL
 aL
 WO
 WO
@@ -35691,8 +34008,9 @@ WO
 WO
 WO
 WO
-wo
-wo
+WO
+WO
+WO
 wo
 wo
 wo
@@ -35878,12 +34196,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -35907,16 +34225,16 @@ qh
 WT
 Ze
 oz
-Ex
-Bf
-yS
+oz
+oz
+oz
 oz
 Xr
 lS
 KC
 zv
 aO
-ml
+QU
 Tq
 gA
 aL
@@ -35936,8 +34254,7 @@ FS
 cC
 tZ
 nO
-PH
-PH
+aL
 aL
 WO
 WO
@@ -35948,8 +34265,9 @@ WO
 WO
 WO
 WO
-wo
-wo
+WO
+WO
+WO
 wo
 wo
 wo
@@ -36135,12 +34453,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -36152,7 +34470,7 @@ WO
 WO
 WO
 WO
-WO
+XG
 WO
 WO
 oz
@@ -36160,9 +34478,9 @@ RR
 RR
 RR
 oz
-dH
-Kp
-UG
+WN
+lG
+XJ
 Ej
 zx
 nJ
@@ -36173,15 +34491,15 @@ RO
 yY
 vy
 sR
-oX
+QU
 ao
-La
-HA
-HA
+oz
 rD
 rD
-tn
-OQ
+rD
+rD
+nO
+do
 yk
 Lj
 nO
@@ -36193,7 +34511,7 @@ rq
 TX
 gl
 nO
-PH
+aL
 aL
 WO
 WO
@@ -36392,12 +34710,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -36417,7 +34735,7 @@ RR
 RR
 RR
 oz
-Yc
+qh
 fO
 xl
 as
@@ -36430,15 +34748,15 @@ oi
 EZ
 TC
 QU
-yu
-La
-La
-HA
-rD
-rD
-rD
-tn
-Iv
+QU
+oz
+oz
+wo
+wo
+wo
+wo
+nO
+qx
 yQ
 Bs
 nO
@@ -36456,7 +34774,7 @@ KF
 WO
 WO
 WO
-WO
+XG
 WO
 WO
 WO
@@ -36649,14 +34967,14 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
-WO
-WO
-WO
-WO
-WO
-Xe
 WO
 uJ
 dr
@@ -36678,24 +34996,24 @@ Nz
 eW
 vP
 Ai
-UF
+vP
 ui
-gi
+vP
 lp
-gi
-ja
-gi
-OR
+vP
+eW
+vP
+AR
 ft
-Ln
+QU
 oz
-aL
-vh
-PH
-PH
-PH
+wo
+wo
+wo
+wo
+wo
 nO
-Lg
+Iw
 iP
 RU
 nO
@@ -36715,7 +35033,7 @@ WO
 WO
 WO
 WO
-Xe
+WO
 WO
 WO
 WO
@@ -36906,12 +35224,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -36931,11 +35249,11 @@ oz
 oz
 oz
 NN
-Ax
 NN
 NN
+NN
 Ax
-Pq
+ZD
 oG
 ZD
 NN
@@ -36946,13 +35264,13 @@ NN
 TE
 ov
 oz
-aL
-PH
-PH
-PH
-PH
+wo
+wo
+wo
+wo
+wo
 nO
-gF
+nO
 eL
 nO
 nO
@@ -37163,31 +35481,31 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
 XG
-dS
-dS
-dS
-dS
-dS
-Uf
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-vx
+WO
+WO
+WO
+WO
+WO
+dr
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+NN
 rO
 zQ
 rh
@@ -37209,8 +35527,8 @@ nO
 nO
 nO
 dO
-Rt
-TX
+FS
+zH
 HQ
 nO
 SK
@@ -37420,6 +35738,12 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -37428,20 +35752,14 @@ WO
 WO
 WO
 WO
-XG
-wP
-dS
-dS
-LX
-dS
-dS
-dS
-dS
-dS
+WO
+WO
+WO
+WO
 jE
 IU
-ZF
-lW
+WO
+WO
 VL
 VL
 VL
@@ -37449,7 +35767,7 @@ VL
 Gx
 LT
 Qi
-Im
+lT
 Jq
 EK
 oN
@@ -37466,7 +35784,7 @@ SK
 SK
 SK
 nO
-nh
+rq
 Gr
 HU
 nO
@@ -37677,6 +35995,12 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -37685,11 +36009,6 @@ WO
 WO
 WO
 WO
-WV
-WV
-PH
-PH
-UV
 WO
 WO
 WO
@@ -37698,15 +36017,14 @@ WO
 WO
 WO
 WO
-tr
-Hp
+yy
 ga
 tC
 wa
-vQ
+jL
 Wq
 Uk
-aJ
+lT
 Jq
 UC
 pX
@@ -37723,8 +36041,8 @@ SK
 SK
 SK
 nO
-ey
-TX
+xi
+zH
 HU
 nO
 SK
@@ -37934,19 +36252,19 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-hE
-cB
-cB
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 hE
-cB
+hE
+hE
+hE
+hE
 lm
 lm
 hE
@@ -37980,8 +36298,8 @@ SK
 SK
 SK
 nO
-ey
-TX
+xi
+zH
 HU
 nO
 SK
@@ -38191,17 +36509,17 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 TJ
-ig
-px
+Ii
+Ii
 hE
 FD
 bc
@@ -38237,8 +36555,8 @@ SK
 SK
 SK
 nO
-nh
-TX
+rq
+zH
 HU
 nO
 SK
@@ -38448,19 +36766,19 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 wL
 Yx
 DS
 ZN
-RI
+Dj
 Bb
 QA
 rf
@@ -38494,8 +36812,8 @@ SK
 SK
 SK
 nO
-Fi
-TX
+WS
+zH
 HU
 nO
 SK
@@ -38508,7 +36826,7 @@ mm
 gw
 SX
 bq
-Nr
+zt
 MV
 ID
 EN
@@ -38518,7 +36836,7 @@ WO
 WO
 WO
 WO
-WO
+XG
 WO
 wo
 wo
@@ -38705,18 +37023,18 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
+wo
+wo
+wo
 hE
 hE
 hE
 hE
 el
-kC
-Lv
+SP
+Yx
 ps
-TR
+VK
 Fg
 QG
 ES
@@ -38751,8 +37069,8 @@ nO
 nO
 nO
 dO
-jg
-TX
+HS
+zH
 HU
 nO
 SK
@@ -38962,17 +37280,17 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
+wo
+wo
+wo
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 Yx
-uD
+Ii
 ZN
 Pn
 so
@@ -39002,14 +37320,14 @@ ck
 ck
 ck
 oz
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-nh
-TX
+rq
+zH
 HU
 nO
 nO
@@ -39219,17 +37537,17 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
+wo
+wo
+wo
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 Yx
-uD
+Ii
 hE
 hE
 hE
@@ -39259,19 +37577,19 @@ AR
 lR
 yo
 oz
-vh
+wo
 nO
 SK
 SK
 SK
 nO
-ey
-TX
+xi
+zH
 HU
 nO
-ys
-Op
-WA
+gl
+gl
+gl
 nO
 rq
 TX
@@ -39283,15 +37601,15 @@ nO
 nO
 nO
 nO
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
-wo
+ip
+ip
+ip
+ip
+ip
+ip
+ip
+ip
+ip
 wo
 wo
 wo
@@ -39476,17 +37794,17 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
+wo
+wo
+wo
 hE
 GV
 GV
 GV
 hE
-Ya
+SP
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -39516,17 +37834,17 @@ NN
 oz
 oz
 oz
-zA
+rD
 nO
 SK
 SK
 SK
 nO
-ey
-hM
+xi
+KA
 yC
-YT
-rW
+Jb
+nK
 xy
 nK
 Jb
@@ -39538,16 +37856,16 @@ Jb
 Jb
 pH
 nO
-aL
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -39741,9 +38059,9 @@ GV
 GV
 GV
 hE
-kW
+lc
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -39755,8 +38073,8 @@ Ii
 hE
 hh
 hh
-bG
-bG
+CK
+CK
 NN
 Qe
 wM
@@ -39773,19 +38091,19 @@ NN
 WZ
 hh
 hh
-bG
+hh
 nO
 SK
 SK
 SK
 nO
-nh
+rq
 Na
 YE
 Yd
-ee
+Yd
 sJ
-ug
+iN
 Yd
 Yd
 Ns
@@ -39795,16 +38113,16 @@ Yd
 zd
 Hk
 nO
-aL
-aL
-aL
-uJ
-dr
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -39998,9 +38316,9 @@ GV
 GV
 GV
 hE
-Hc
+Gb
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -40012,8 +38330,8 @@ Ii
 hE
 WZ
 hh
-bG
-bG
+CK
+CK
 NN
 NN
 NN
@@ -40030,19 +38348,19 @@ NN
 hh
 hh
 hh
-bG
+hh
 nO
 SK
 SK
 SK
 nO
 Nq
-iJ
-xR
-xR
-la
+jO
+GA
+GA
+Hf
 Lf
-eM
+it
 GA
 GA
 jO
@@ -40052,15 +38370,15 @@ Hf
 Lf
 it
 nO
-aL
-aL
-vh
-xI
-KF
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 uh
 uh
@@ -40257,7 +38575,7 @@ hE
 el
 VW
 qT
-uD
+Ii
 hE
 GV
 GV
@@ -40269,25 +38587,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
-ut
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 Ty
 UI
 Ty
-ut
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 nO
 nO
 nO
@@ -40299,7 +38617,7 @@ nO
 dO
 CA
 TX
-HU
+gl
 nO
 nO
 nO
@@ -40309,15 +38627,15 @@ xi
 TX
 gl
 nO
-aL
-aL
-aL
-dr
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 Sr
 Sr
@@ -40512,9 +38830,9 @@ GV
 GV
 GV
 hE
-kW
+lc
 bX
-CD
+ii
 hE
 GV
 GV
@@ -40526,25 +38844,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 BJ
 Pm
 Bz
 va
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 eZ
-bG
-bG
-bG
+CK
+CK
+CK
 Kk
 GS
 XE
@@ -40554,9 +38872,9 @@ SK
 SK
 SK
 nO
-ey
+xi
 TX
-HU
+gl
 nO
 SK
 SK
@@ -40566,15 +38884,15 @@ rq
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 Sr
 Sr
@@ -40769,9 +39087,9 @@ GV
 GV
 GV
 hE
-Fj
+kP
 yi
-ek
+ZM
 hE
 hE
 hE
@@ -40783,25 +39101,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 va
 VA
 NQ
 zW
 va
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 Kk
 OM
 cV
@@ -40811,9 +39129,9 @@ SK
 SK
 SK
 nO
-ey
+xi
 TX
-HU
+gl
 nO
 SK
 SK
@@ -40823,11 +39141,11 @@ HS
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 uh
 uh
@@ -41006,21 +39324,21 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 GV
 GV
@@ -41028,7 +39346,7 @@ GV
 hE
 Va
 Dj
-RI
+Dj
 qm
 Bo
 Fu
@@ -41040,25 +39358,25 @@ Dj
 hE
 hh
 hh
-bG
+CK
 va
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 va
 Ct
 eZ
 BJ
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 Wi
 ir
 zf
@@ -41070,7 +39388,7 @@ SK
 nO
 ZO
 TX
-HU
+gl
 nO
 SK
 SK
@@ -41080,11 +39398,11 @@ xi
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -41263,29 +39581,29 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-Xe
-Fy
-dr
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 Ql
-Ea
+de
 de
 de
 de
@@ -41297,25 +39615,25 @@ ii
 hE
 hh
 hh
-bG
-bG
+CK
+CK
 eZ
 va
-bG
-bG
-bG
+CK
+CK
+CK
 va
 qi
 eZ
 eZ
-bG
+CK
 va
 eZ
 eZ
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 Kk
 TW
 mH
@@ -41325,23 +39643,23 @@ SK
 SK
 SK
 nO
-ey
+xi
 TX
-HU
+gl
 nO
 SK
 SK
 SK
 nO
 rq
-Gr
+ZE
 gl
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -41520,29 +39838,29 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-xI
-dr
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+rD
+rD
+rD
+rD
+wo
+wo
+wo
+wo
+wo
 hE
 GV
 GV
 GV
 hE
-Hc
+Gb
 KS
-uD
+Ii
 wb
 Ii
 Ii
@@ -41554,8 +39872,8 @@ ZM
 hE
 hh
 hh
-bG
-bG
+CK
+CK
 BJ
 VA
 BJ
@@ -41564,15 +39882,15 @@ sI
 NQ
 zW
 eZ
-bG
+CK
 sI
 BJ
 VA
 BJ
 hh
 HH
-bG
-bG
+CK
+CK
 Kk
 ud
 me
@@ -41582,9 +39900,9 @@ SK
 SK
 SK
 nO
-ey
+xi
 TX
-HU
+gl
 nO
 SK
 SK
@@ -41594,11 +39912,11 @@ WS
 IG
 PG
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -41777,29 +40095,29 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-dr
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+rD
+rD
+rD
+Tn
+cB
+rD
+nh
 hE
 hE
 hE
-hE
 JP
 JP
 JP
 JP
 JP
 JP
-Vn
+qN
 xg
-Vn
+qN
 JP
 JP
 JP
@@ -41811,25 +40129,25 @@ hE
 hE
 hh
 hh
-bG
+CK
 va
 BJ
 XW
 NE
 eZ
-bG
+CK
 va
 qi
 eZ
-bG
-bG
-bG
+CK
+CK
+CK
 va
-bG
-bG
+CK
+CK
 wG
-bG
-bG
+CK
+CK
 Tm
 Tm
 EG
@@ -41839,9 +40157,9 @@ cA
 cA
 cA
 cA
-PB
+LV
 uq
-PB
+LV
 cA
 cA
 cA
@@ -41851,10 +40169,10 @@ nO
 nO
 nO
 nO
-zA
-zA
 ip
-MC
+ip
+ip
+ip
 uh
 uh
 yl
@@ -42034,17 +40352,17 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-hE
+wo
+wo
+wo
+wo
+Kp
+kZ
+LB
+PH
+PH
+Fi
+nh
 eg
 kv
 IC
@@ -42066,30 +40384,30 @@ JP
 kN
 hh
 hh
-bG
-bG
-bG
+CK
+CK
+CK
 VZ
 VA
 Ed
 hh
-bG
-bG
+CK
+CK
 va
 qi
 va
 wd
-bG
-bG
+CK
+CK
 va
 BJ
 hh
 hh
-bG
-bG
-bG
-Dk
-bG
+CK
+CK
+CK
+CK
+CK
 rL
 ua
 iI
@@ -42098,7 +40416,7 @@ sk
 JI
 yr
 DZ
-kF
+RX
 QY
 pb
 ls
@@ -42291,17 +40609,17 @@ wo
 wo
 wo
 wo
-WO
-WO
+wo
+wo
+wo
+wo
+cW
+hM
+mE
+jg
 PH
-PH
-aL
-WO
-WO
-WO
-WO
-WO
-hE
+Kt
+nh
 vn
 Vc
 oh
@@ -42323,30 +40641,30 @@ JP
 hh
 hh
 hh
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 BJ
 kN
 hh
-bG
+CK
 wG
 va
 Ct
 va
 wd
 wG
-bG
-bG
+CK
+CK
 BJ
 sF
 hh
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 rL
 du
 Ua
@@ -42355,7 +40673,7 @@ zo
 iI
 AY
 DZ
-kF
+RX
 iI
 iI
 ZS
@@ -42370,7 +40688,7 @@ Vw
 Vw
 Vw
 uh
-CT
+qL
 fe
 fe
 PV
@@ -42548,17 +40866,17 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+OS
 PH
 PH
 PH
 PH
-PH
-PH
-aL
-WO
-WO
-WO
-hE
+sa
+nh
 NG
 rj
 Uq
@@ -42580,30 +40898,30 @@ JP
 hh
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 wG
 eZ
 eZ
 Ct
 va
 wG
-bG
-bG
+CK
+CK
 VZ
 eZ
 va
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 rL
 bn
 jc
@@ -42612,7 +40930,7 @@ zo
 iI
 AY
 Ou
-cW
+cN
 cN
 cN
 Bl
@@ -42627,7 +40945,7 @@ tO
 oB
 Vw
 uh
-GB
+GR
 fe
 qL
 PV
@@ -42809,13 +41127,13 @@ Eu
 Eu
 Eu
 Eu
+uD
 Eu
-Eu
-zA
-zA
-MC
-MC
-hE
+De
+De
+bu
+De
+nh
 ZN
 VK
 ZN
@@ -42837,30 +41155,30 @@ JP
 hh
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 cb
 wG
 va
 eZ
 Ku
 va
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 rL
 du
 sX
@@ -43084,7 +41402,7 @@ JX
 Qm
 LN
 VF
-sa
+Gd
 PA
 Wk
 Wk
@@ -43094,10 +41412,10 @@ JP
 NZ
 hh
 hh
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 sI
 hh
 hh
@@ -43106,10 +41424,10 @@ EO
 MO
 cL
 ve
-gZ
+CK
 UQ
-bG
-bG
+CK
+CK
 sI
 hh
 hh
@@ -43117,7 +41435,7 @@ BJ
 BJ
 hh
 hh
-bG
+CK
 rL
 Fn
 iI
@@ -43126,7 +41444,7 @@ iI
 iI
 AY
 QW
-QW
+bG
 YV
 Vz
 hk
@@ -43341,7 +41659,7 @@ Gd
 Gd
 Ia
 Qy
-Qy
+Ea
 vt
 JX
 JX
@@ -43383,7 +41701,7 @@ cN
 cN
 lD
 QW
-QW
+bG
 Ud
 kj
 hk
@@ -43585,7 +41903,7 @@ ed
 lg
 Zy
 Zy
-Zz
+zZ
 IJ
 sB
 zZ
@@ -43609,7 +41927,7 @@ gb
 zw
 zw
 cE
-Tn
+cE
 cE
 ei
 ei
@@ -43627,7 +41945,7 @@ ei
 cE
 cE
 ei
-SS
+ei
 cE
 cE
 cE
@@ -43855,7 +42173,7 @@ JX
 Qm
 LN
 Dc
-Te
+hf
 hf
 hf
 hf
@@ -44099,7 +42417,7 @@ Eu
 Eu
 Xa
 Xa
-nS
+em
 nS
 nS
 nS
@@ -44122,9 +42440,9 @@ JP
 NZ
 hh
 hh
-bG
-bG
-bG
+CK
+CK
+CK
 eZ
 sI
 hh
@@ -44136,13 +42454,13 @@ Qx
 xn
 sY
 gE
-bG
+CK
 iX
 sI
 hh
 hh
-bG
-bG
+CK
+CK
 BJ
 VA
 hh
@@ -44353,8 +42671,8 @@ Eu
 Eu
 Eu
 Eu
-zA
-zA
+MC
+MC
 MC
 MC
 hE
@@ -44379,30 +42697,30 @@ JP
 ZA
 hh
 hh
-bG
-bG
-bG
+CK
+CK
+CK
 eZ
 BJ
 tg
 hh
-bG
+CK
 eZ
 va
 Ku
 va
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 BJ
 hh
 hh
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 rL
 du
 sX
@@ -44421,10 +42739,10 @@ Zo
 Zo
 Zo
 nO
-zA
-zA
-zA
-MC
+ip
+ip
+ip
+ip
 uh
 Qp
 fe
@@ -44604,11 +42922,11 @@ wo
 wo
 wo
 wo
-PH
-PH
-PH
-PH
-aL
+WO
+WO
+WO
+WO
+WO
 WO
 WO
 WO
@@ -44636,30 +42954,30 @@ JP
 Jt
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 wG
-bG
+CK
 wG
 va
 qi
 va
 eZ
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 va
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 rL
 bn
 jc
@@ -44678,12 +42996,12 @@ do
 Kh
 Lj
 nO
-aL
-aL
-aL
-WO
+wo
+wo
+wo
+wo
 uh
-CT
+qL
 fe
 GR
 PV
@@ -44862,9 +43180,9 @@ wo
 wo
 wo
 WO
-PH
-PH
-aL
+WO
+WO
+WO
 dr
 dr
 WO
@@ -44893,30 +43211,30 @@ JP
 KB
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 wd
-bG
+CK
 wG
 va
 qi
 va
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 BJ
 kN
 hh
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 rL
 du
 Ua
@@ -44935,12 +43253,12 @@ dX
 ok
 ch
 nO
-aL
-aL
-aL
-WO
+wo
+wo
+wo
+wo
 uh
-GB
+GR
 fe
 fe
 PV
@@ -45150,30 +43468,30 @@ JP
 kN
 hh
 hh
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
 BJ
 kN
 hh
-bG
-bG
+CK
+CK
 va
 Ct
 eZ
-bG
-bG
-bG
+CK
+CK
+CK
 va
 VA
 hh
 hh
-bG
-bG
-bG
 CK
-bG
+CK
+CK
+CK
+CK
 rL
 sG
 iI
@@ -45192,10 +43510,10 @@ Iw
 wc
 RU
 nO
-aL
-aL
-aL
-WO
+wo
+wo
+wo
+wo
 uh
 ww
 RG
@@ -45395,9 +43713,9 @@ JP
 JP
 JP
 pz
-Vn
+qN
 xg
-Vn
+qN
 JP
 JP
 JP
@@ -45409,24 +43727,24 @@ hE
 hE
 hh
 hh
-bG
+CK
 eZ
 BJ
 hh
 hh
-bG
-bG
+CK
+CK
 eZ
 Ct
 va
-bG
-bG
+CK
+CK
 va
 Fz
 BJ
 NQ
 hh
-bG
+CK
 va
 Tm
 Tm
@@ -45437,9 +43755,9 @@ cA
 cA
 cA
 Cx
-PB
+LV
 Ab
-PB
+LV
 cA
 cA
 cA
@@ -45449,10 +43767,10 @@ nO
 nO
 nO
 nO
-aL
-aL
-vh
-WO
+wo
+wo
+wo
+wo
 uh
 uh
 yl
@@ -45652,9 +43970,9 @@ GV
 GV
 GV
 hE
-kW
+lc
 DU
-uD
+Ii
 hJ
 Ii
 Ii
@@ -45683,8 +44001,8 @@ BJ
 BJ
 NQ
 hh
-bG
-bG
+CK
+CK
 Kk
 GS
 gJ
@@ -45694,9 +44012,9 @@ SK
 SK
 SK
 nO
-nh
+rq
 TX
-HU
+gl
 nO
 SK
 Wp
@@ -45706,11 +44024,11 @@ HS
 cC
 tZ
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -45892,7 +44210,7 @@ wo
 WO
 WO
 WO
-Xe
+WO
 WO
 WO
 WO
@@ -45909,9 +44227,9 @@ GV
 GV
 GV
 hE
-kW
+lc
 Gi
-Nw
+ec
 ec
 ec
 ec
@@ -45923,25 +44241,25 @@ ZM
 hE
 hh
 hh
-bG
-bG
+CK
+CK
 wG
 va
-bG
-bG
+CK
+CK
 eZ
 eZ
 qi
 va
-bG
+CK
 va
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 Kk
 OM
 ir
@@ -45951,23 +44269,23 @@ SK
 SK
 SK
 nO
-ey
+xi
 TX
-HU
+gl
 nO
 SK
 SK
 SK
 nO
 xi
-Gr
+ZE
 gl
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -46168,11 +44486,11 @@ GV
 hE
 Va
 Dj
-RI
+Dj
 lh
 BE
 ya
-ya
+aH
 BE
 eo
 RI
@@ -46180,25 +44498,25 @@ Dj
 hE
 hh
 hh
-bG
-bG
-bG
+CK
+CK
+CK
 eZ
-bG
-bG
-bG
+CK
+CK
+CK
 va
 qi
 eZ
 BJ
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 Wi
 ir
 Fo
@@ -46210,7 +44528,7 @@ SK
 nO
 ZO
 TX
-HU
+gl
 nO
 SK
 SK
@@ -46220,11 +44538,11 @@ rq
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
+wo
+wo
+wo
+wo
+wo
 uh
 Og
 Og
@@ -46403,29 +44721,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+Mz
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 bX
-CD
+ii
 hE
 hE
 hE
@@ -46437,25 +44755,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 eZ
 BJ
 Mt
 zW
 va
-bG
-bG
-bG
+CK
+CK
+CK
 va
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
 Kk
 TW
 rm
@@ -46465,9 +44783,9 @@ SK
 SK
 SK
 nO
-nh
+rq
 TX
-HU
+gl
 nO
 SK
 SK
@@ -46660,29 +44978,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+ee
+Bf
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 hE
 GV
 GV
 GV
 hE
-Hc
+Gb
 yi
-ek
+ZM
 hE
 GV
 GV
@@ -46694,25 +45012,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 eZ
 qi
 eZ
 BJ
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
 Kk
 ud
 vM
@@ -46722,9 +45040,9 @@ SK
 SK
 SK
 nO
-Fi
+WS
 TX
-HU
+gl
 nO
 SK
 SK
@@ -46734,15 +45052,15 @@ WS
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 Sr
 Sr
@@ -46917,21 +45235,21 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+aE
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 hE
 hE
 hE
@@ -46939,7 +45257,7 @@ hE
 el
 xW
 qT
-uD
+Ii
 hE
 GV
 GV
@@ -46951,25 +45269,25 @@ Ii
 hE
 hh
 hh
-bG
-bG
-bG
-bG
-bG
-bG
-aE
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 LU
 LC
 yL
-aE
-bG
-bG
-bG
-bG
-bG
-bG
-bG
-bG
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
+CK
 nO
 nO
 nO
@@ -46981,7 +45299,7 @@ nO
 nO
 RQ
 TX
-HU
+gl
 nO
 nO
 nO
@@ -46991,15 +45309,15 @@ rq
 TX
 gl
 nO
-aL
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 Sr
 Sr
@@ -47174,29 +45492,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 hE
 GV
 GV
 GV
 hE
-Fj
+kP
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -47208,8 +45526,8 @@ Ii
 hE
 WZ
 hh
-bG
-bG
+CK
+CK
 lZ
 lZ
 lZ
@@ -47233,12 +45551,12 @@ SK
 SK
 nO
 YN
-YT
-LV
-YT
-Ry
-gn
-uk
+Jb
+pH
+Jb
+qs
+xU
+Hk
 Jb
 Jb
 pH
@@ -47248,15 +45566,15 @@ qs
 xU
 Hk
 nO
-aL
-aL
-vh
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 Sr
 Sr
@@ -47431,29 +45749,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 WO
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -47465,8 +45783,8 @@ Ii
 hE
 hh
 hh
-bG
-bG
+CK
+CK
 lZ
 mh
 ur
@@ -47489,13 +45807,13 @@ SK
 SK
 SK
 nO
-ey
+xi
 nD
 wv
 Yd
-ee
+Yd
 XF
-st
+Eq
 Yd
 Yd
 DJ
@@ -47505,15 +45823,15 @@ Yd
 sg
 it
 nO
-aL
-aL
-aL
-WO
-dr
-dr
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 uh
 uh
 uh
@@ -47688,29 +46006,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 WO
 hE
 GV
 GV
 GV
 hE
-Ya
+SP
 Yx
-uD
+Ii
 hE
 GV
 GV
@@ -47740,17 +46058,17 @@ Ec
 Ec
 Ec
 Ec
-zA
+ip
 nO
 SK
 SK
 SK
 nO
-jg
-nY
-Qc
-xR
-kZ
+HS
+MV
+eM
+GA
+nA
 pj
 nA
 GA
@@ -47762,16 +46080,16 @@ GA
 GA
 jO
 nO
-aL
-aL
-aL
-WO
-Fy
-xI
-Fy
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -47945,29 +46263,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 WO
 hE
 GV
 GV
 GV
 hE
-kW
+lc
 Yx
-uD
+Ii
 hE
 hE
 hE
@@ -47997,19 +46315,19 @@ Ec
 Ye
 uG
 Ec
-vh
+wo
 nO
 SK
 SK
 SK
 nO
-nh
-TX
+rq
+zH
 HU
 nO
-Ff
-gN
-KP
+gl
+gl
+gl
 nO
 xi
 TX
@@ -48021,15 +46339,15 @@ nO
 nO
 nO
 nO
-aL
-aL
-WO
-dr
-WO
-WO
-WO
-WO
-wo
+ip
+ip
+ip
+ip
+ip
+ip
+ip
+ip
+ip
 wo
 wo
 wo
@@ -48202,29 +46520,29 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+Nw
+Im
+Op
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 WO
 hE
 GV
 GV
 GV
 hE
-Hc
+Gb
 Yx
-uD
+Ii
 ZN
 uI
 Jl
@@ -48254,14 +46572,14 @@ Bq
 nM
 DW
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-Fi
-TX
+WS
+zH
 HU
 nO
 nO
@@ -48459,31 +46777,31 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 WO
 hE
 hE
 hE
 hE
 hE
-Ya
+SP
 Yx
-Cq
+ps
 VK
-Gt
+Fg
 gS
 QA
 fE
@@ -48511,14 +46829,14 @@ ho
 ho
 ho
 Ec
-aL
+wo
 nO
 nO
 nO
 nO
 dO
-ey
-TX
+xi
+zH
 HU
 nO
 SK
@@ -48729,18 +47047,18 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 CJ
 Yx
 MK
 ZN
-RI
+Dj
 Of
 ES
 rf
@@ -48768,14 +47086,14 @@ Or
 rt
 Md
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-nh
-TX
+rq
+zH
 HU
 nO
 SK
@@ -48986,16 +47304,16 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 hE
-ws
-jy
-oq
+TJ
+Ii
+Ii
 hE
 ca
 hc
@@ -49025,14 +47343,14 @@ mB
 mB
 ab
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-ey
-TX
+xi
+zH
 HU
 nO
 SK
@@ -49243,18 +47561,18 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 hE
 hE
-cB
-cB
 hE
-cB
+hE
+hE
+hE
 lm
 lm
 hE
@@ -49265,11 +47583,11 @@ hE
 aL
 vY
 qF
-OS
-hH
+uK
+xA
 Yl
-hn
-kU
+sw
+lj
 cZ
 gG
 ru
@@ -49282,14 +47600,14 @@ Bq
 nM
 DW
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-ey
-TX
+xi
+zH
 HU
 nO
 SK
@@ -49311,7 +47629,7 @@ aL
 WO
 WO
 WO
-WO
+XG
 WO
 WO
 wo
@@ -49500,6 +47818,12 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -49508,26 +47832,20 @@ WO
 WO
 WO
 WO
-aH
-tr
-dS
-We
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-lk
-Lx
+WO
+WO
+WO
+WO
+WO
+WO
+vY
+WQ
 EB
 lZ
 lZ
 lZ
 FQ
-yj
+bp
 Ke
 ru
 QB
@@ -49539,14 +47857,14 @@ Ec
 Jv
 YB
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-nh
-ZE
+rq
+Gr
 HU
 nO
 SK
@@ -49757,15 +48075,15 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
-WO
-WO
-WO
-WO
-WO
-aH
 WO
 WO
 WO
@@ -49784,7 +48102,7 @@ lZ
 ym
 bp
 bp
-yj
+bp
 Ke
 an
 uf
@@ -49796,13 +48114,13 @@ Ec
 Ec
 Ec
 Ec
-aL
+wo
 nO
 SK
 SK
 SK
 nO
-Fi
+WS
 zH
 HU
 nO
@@ -49814,9 +48132,9 @@ rq
 IL
 gl
 nO
-PH
 aL
 aL
+WO
 WO
 WO
 WO
@@ -50014,6 +48332,15 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
+WO
+WO
+XG
 WO
 WO
 WO
@@ -50022,25 +48349,16 @@ WO
 WO
 WO
 WO
-tr
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-dS
-oC
-dS
-dS
-dS
-De
-gf
-Bi
-Bi
+WO
+WO
+WO
+WO
+WO
+WO
+lZ
+bR
+If
+If
 Xt
 sQ
 WD
@@ -50050,17 +48368,17 @@ If
 If
 bR
 lZ
-aL
-aL
-aL
-aL
+wo
+wo
+wo
+wo
 nO
 nO
 nO
 nO
 nO
-Rt
-TX
+FS
+zH
 gU
 nO
 SK
@@ -50071,9 +48389,9 @@ HS
 TX
 gl
 nO
-PH
 aL
 aL
+WO
 WO
 WO
 WO
@@ -50271,12 +48589,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -50298,8 +48616,8 @@ XR
 lZ
 lZ
 lZ
-pK
-bU
+lZ
+OC
 Lw
 bU
 lZ
@@ -50307,16 +48625,16 @@ lZ
 lZ
 lZ
 lZ
-aL
-aL
-WO
-WO
-PH
-PH
-PH
-PH
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 nO
-gF
+nO
 lX
 nO
 nO
@@ -50328,10 +48646,10 @@ xi
 TX
 gl
 nO
-PH
-PH
 aL
 aL
+WO
+WO
 WO
 WO
 WO
@@ -50528,13 +48846,13 @@ wo
 wo
 wo
 wo
+wo
+wo
+wo
+wo
+wo
+wo
 WO
-WO
-WO
-WO
-WO
-WO
-Xe
 WO
 WO
 WO
@@ -50556,24 +48874,24 @@ FC
 Ny
 Gf
 PQ
-lt
+Gf
 Zg
 VI
-mE
-QO
-Kt
-QO
-Yb
-dd
-dd
-Mz
-Mz
-em
-em
-em
-em
-gQ
-HI
+PQ
+Gf
+Ny
+Gf
+Ec
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+nO
+do
 ZB
 Lj
 nO
@@ -50585,15 +48903,15 @@ rq
 TX
 gl
 nO
-PH
-PH
 aL
 aL
+WO
+WO
 WO
 WO
 WO
 dr
-bu
+xI
 WO
 WO
 WO
@@ -50785,12 +49103,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -50821,14 +49139,14 @@ AV
 GU
 tf
 Ec
-aL
-aL
-WO
-WO
-WO
-WO
-PH
-PH
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 nO
 qx
 nH
@@ -50842,8 +49160,6 @@ xi
 ZE
 gl
 nO
-PH
-PH
 aL
 aL
 WO
@@ -50856,6 +49172,8 @@ WO
 WO
 WO
 WO
+WO
+wo
 wo
 wo
 wo
@@ -51042,12 +49360,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-uJ
-dr
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -51074,21 +49392,21 @@ xV
 Qw
 LL
 vE
-SG
+oa
 AO
 Ru
 Yb
-dd
-dd
-Mz
-Mz
-Mz
-Mz
-em
-em
-gQ
+rD
+rD
+rD
+rD
+wo
+wo
+wo
+wo
+nO
 Mj
-Tr
+wc
 JO
 nO
 SK
@@ -51099,8 +49417,6 @@ WS
 TX
 gl
 nO
-PH
-PH
 aL
 aL
 WO
@@ -51113,6 +49429,8 @@ WO
 WO
 WO
 WO
+WO
+wo
 wo
 wo
 wo
@@ -51299,16 +49617,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-uJ
-xI
-KF
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -51316,6 +49630,10 @@ WO
 WO
 WO
 WO
+WO
+WO
+WO
+XG
 WO
 WO
 Ec
@@ -51327,22 +49645,22 @@ HE
 Ol
 Cl
 Ec
-GL
-LB
-AS
 Ec
+Ec
+Ec
+gs
 Ij
 LS
 fn
-Ec
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-PH
+Yb
+pK
+wP
+xR
+rD
+rD
+wo
+wo
+wo
 nO
 nO
 nO
@@ -51356,10 +49674,10 @@ FS
 IG
 PG
 nO
-PH
-PH
 aL
 aL
+WO
+WO
 WO
 WO
 WO
@@ -51556,12 +49874,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-uJ
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -51584,21 +49902,37 @@ hL
 Ol
 Cl
 Ec
+Il
+Il
+Il
 Ec
-Ec
-Ec
-gs
-RF
+Pg
 wX
 jt
-Ec
+Gt
+Bi
+Bi
+Bi
+yj
+rD
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+nO
+nO
+nO
+nO
+nO
 aL
 aL
-WO
-WO
-WO
-WO
-WO
 WO
 WO
 WO
@@ -51608,23 +49942,7 @@ WO
 WO
 WO
 wo
-nO
-nO
-nO
-nO
-nO
-PH
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
 wo
 wo
 wo
@@ -51813,12 +50131,12 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
 WO
 WO
 WO
@@ -51848,22 +50166,22 @@ Ec
 qg
 Rh
 Av
-Ec
-aL
-aL
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+rW
+Bi
+Bi
+Bi
+lt
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+wo
+wo
+wo
 wo
 wo
 wo
@@ -52070,25 +50388,25 @@ wo
 wo
 wo
 wo
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
+wo
 Ec
 Il
 Il
@@ -52105,22 +50423,22 @@ Ec
 Pg
 Rh
 Av
-Ec
+Gt
+Bi
+Bi
+Bi
+CD
+rD
 aL
 aL
 WO
 WO
 WO
 WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -52362,22 +50680,22 @@ Ec
 Pg
 Rh
 Av
-Ec
+Gt
+ut
+GB
+Lg
+rD
+rD
 aL
 aL
 WO
 WO
 WO
 WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -52619,7 +50937,11 @@ Ec
 qg
 Rh
 Av
-Ec
+ws
+gn
+gn
+gn
+rD
 aL
 aL
 WO
@@ -52627,14 +50949,10 @@ WO
 WO
 WO
 WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -52869,11 +51187,11 @@ HE
 Ol
 Cl
 Ec
-Il
-Il
-Il
 Ec
-hL
+Ec
+Ec
+Ec
+Nr
 kO
 Av
 Ec
@@ -52888,10 +51206,10 @@ WO
 WO
 WO
 WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -53126,9 +51444,9 @@ hL
 Zu
 Cl
 Ec
-Ec
-Ec
-Ec
+ey
+ey
+ey
 Ec
 sT
 tw
@@ -53143,12 +51461,12 @@ WO
 WO
 WO
 WO
+Fy
 WO
-WO
-WO
-WO
-WO
-WO
+wo
+wo
+wo
+wo
 wo
 wo
 wo
@@ -53391,17 +51709,17 @@ Ec
 Ec
 Ec
 Ec
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+aL
+aL
+WO
+WO
+WO
+WO
+WO
+WO
+dr
+xI
+WO
 wo
 wo
 wo
@@ -53643,22 +51961,22 @@ Ec
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -53900,22 +52218,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -54157,22 +52475,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+XG
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -54414,22 +52732,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -54671,22 +52989,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+Fy
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -54928,22 +53246,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+dr
+xI
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -55161,6 +53479,7 @@ wo
 wo
 wo
 wo
+YK
 wo
 wo
 wo
@@ -55184,23 +53503,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -55417,6 +53735,8 @@ wo
 wo
 wo
 wo
+YK
+YK
 wo
 wo
 wo
@@ -55440,24 +53760,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -55673,6 +53991,10 @@ wo
 wo
 wo
 wo
+YK
+YK
+YK
+YK
 wo
 wo
 wo
@@ -55695,26 +54017,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -55930,6 +54248,11 @@ wo
 wo
 wo
 wo
+YK
+wo
+YK
+YK
+YK
 wo
 wo
 wo
@@ -55951,27 +54274,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+XG
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -56187,6 +54505,11 @@ wo
 wo
 wo
 wo
+YK
+YK
+YK
+YK
+YK
 wo
 wo
 wo
@@ -56208,27 +54531,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -56446,6 +54764,9 @@ wo
 wo
 wo
 wo
+YK
+YK
+YK
 wo
 wo
 wo
@@ -56467,25 +54788,22 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
-wo
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
+WO
 wo
 wo
 wo
@@ -56703,9 +55021,9 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
+YK
+YK
+YK
 wo
 wo
 wo
@@ -56960,9 +55278,9 @@ wo
 wo
 wo
 wo
-wo
-wo
-wo
+YK
+YK
+YK
 wo
 wo
 wo
@@ -57217,8 +55535,8 @@ wo
 wo
 wo
 wo
-wo
-wo
+YK
+YK
 wo
 wo
 wo
@@ -57474,7 +55792,7 @@ wo
 wo
 wo
 wo
-wo
+YK
 wo
 wo
 wo
