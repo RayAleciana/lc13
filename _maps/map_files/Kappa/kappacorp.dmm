@@ -162,6 +162,13 @@
 	},
 /turf/open/floor/facility/halls,
 /area/facility_hallway/control)
+"aY" = (
+/obj/structure/table/reinforced,
+/obj/structure/sign/ordealmonitor{
+	pixel_y = 32
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "aZ" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 5
@@ -1550,10 +1557,8 @@
 	pixel_y = -160;
 	resistance_flags = 115
 	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
+/obj/structure/template_vendor,
+/turf/open/floor/pod/dark,
 /area/city/outskirts)
 "jL" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -4573,6 +4578,9 @@
 	},
 /turf/open/floor/pod,
 /area/department_main/control)
+"yN" = (
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "yQ" = (
 /obj/effect/turf_decal/box,
 /obj/structure/toolabnormality/realization,
@@ -5701,6 +5709,14 @@
 	},
 /turf/open/floor/carpet/red,
 /area/department_main/discipline)
+"Fk" = (
+/obj/machinery/light{
+	dir = 8;
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "Fm" = (
 /obj/effect/turf_decal/siding/purple{
 	color = "#511c4b";
@@ -6444,10 +6460,7 @@
 	pixel_y = -128;
 	resistance_flags = 115
 	},
-/turf/open/floor/plating/ironsand{
-	density = 1;
-	name = "Outskirt"
-	},
+/turf/open/floor/pod/dark,
 /area/city/outskirts)
 "Jb" = (
 /obj/effect/turf_decal/siding/purple{
@@ -6870,6 +6883,12 @@
 	},
 /turf/open/floor/facility/halls,
 /area/department_main/information)
+"LZ" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "Refinery Office"
+	},
+/turf/open/floor/pod/dark,
+/area/department_main/extraction)
 "Md" = (
 /obj/structure/table/reinforced{
 	resistance_flags = 115
@@ -6918,6 +6937,10 @@
 	slowdown = -0.3
 	},
 /area/department_main/command)
+"Mp" = (
+/obj/structure/rack,
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "Mr" = (
 /obj/item/toy/crayon/spraycan/infinite{
 	pixel_x = 8
@@ -7402,6 +7425,10 @@
 	},
 /turf/open/floor/facility/halls,
 /area/department_main/safety)
+"OE" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "OM" = (
 /obj/structure/rack{
 	pixel_x = -1
@@ -8887,6 +8914,14 @@
 	},
 /turf/open/floor/pod/light,
 /area/department_main/information)
+"XD" = (
+/obj/structure/grid_crafting_station,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 19
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "XE" = (
 /obj/structure/rack{
 	pixel_x = -1
@@ -9000,6 +9035,13 @@
 	},
 /turf/open/floor/pod/dark,
 /area/department_main/information)
+"XU" = (
+/obj/structure/table/reinforced,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts)
 "XW" = (
 /obj/effect/turf_decal/sand/plating{
 	color = "#c3bab0"
@@ -35163,9 +35205,9 @@ WO
 KF
 Fy
 KV
-WO
-WO
-WO
+rD
+rD
+rD
 oz
 RR
 RR
@@ -35420,9 +35462,9 @@ WO
 KF
 xI
 Fy
-WO
-WO
-WO
+rD
+aY
+yN
 oz
 oz
 oz
@@ -35677,13 +35719,13 @@ WO
 WO
 KV
 Nl
-WO
-WO
-WO
-WO
-WO
-ai
-rc
+rD
+XD
+yN
+Fk
+yN
+yN
+yN
 NN
 rO
 zQ
@@ -35934,13 +35976,13 @@ WO
 WO
 WO
 WO
-WO
+rD
 jE
 IU
-WO
-WO
+yN
+Mp
 VL
-VL
+LZ
 VL
 VL
 sf
@@ -36191,11 +36233,11 @@ WO
 WO
 WO
 WO
-WO
-WO
-SG
-WO
-WO
+rD
+XU
+OE
+OE
+OE
 yy
 ga
 tC
@@ -36451,8 +36493,8 @@ hE
 hE
 hE
 hE
-aL
-aL
+rD
+rD
 yy
 cc
 Cc
@@ -36708,8 +36750,8 @@ hE
 Dv
 pW
 hE
-aL
-aL
+rc
+rc
 VL
 LG
 cH
@@ -36965,8 +37007,8 @@ hE
 OP
 pW
 hE
-aL
-aL
+rc
+rc
 VL
 AK
 gV
@@ -37222,8 +37264,8 @@ aU
 Ac
 Ac
 hE
-aL
-aL
+rc
+rc
 VL
 wr
 cH
@@ -37479,8 +37521,8 @@ hE
 uX
 HP
 hE
-aL
-aL
+rc
+rc
 yy
 wQ
 Us
@@ -37736,8 +37778,8 @@ hE
 hE
 hE
 hE
-aL
-aL
+rc
+rc
 yy
 mL
 ha
@@ -37993,8 +38035,8 @@ lc
 rz
 FE
 hE
-zA
-zA
+ai
+ai
 VL
 VL
 VL
