@@ -52,6 +52,9 @@
 	projectiletype = null
 	simple_mob_flags = SILENCE_RANGED_MESSAGE
 
+	/// Test-range variant Matriarch has this set to TRUE, it disables her more disruptive elements.
+	var/weakened = FALSE
+
 	/// How many non-sweeper corpses has she eaten? Boosts attack speed and movespeed.
 	var/belly = 0
 
@@ -185,46 +188,46 @@
 	// A general "rule" she follows, is that she gets more frantic and quick in her movements and attacks as the fight progresses, and heals more, but deals less damage and is more vulnerable.
 
 	// Association list of key: phase to value: amount of health under which the next phase gets triggered.
-	var/list/phases_health_thresholds = list(1 = 5000, 2 = 2800, 3 = -INFINITY)
+	var/alist/phases_health_thresholds = alist(1 = 5000, 2 = 2800, 3 = -INFINITY)
 
 	// The icons she uses in each phase.
-	var/list/phases_icon_states = list(1 = "matriarch", 2 = "matriarch_slim", 3 = "matriarch_fast")
+	var/alist/phases_icon_states = alist(1 = "matriarch", 2 = "matriarch_slim", 3 = "matriarch_fast")
 
 	// Association lists that control different balancing values for each phase. The keys are the phase, the values are the corresponding intended value for that phase.
-	var/list/phases_move_delays = list(1 = 3, 2 = 2.6, 3 = 2.4)
-	var/list/phases_rapid_melee = list(1 = 2, 2 = 3, 3 = 4)
-	var/list/phases_melee_damage = list(1 = 55, 2 = 48, 3 = 40)
-	var/list/phases_resistance_lists = list(
+	var/alist/phases_move_delays = alist(1 = 3, 2 = 2.6, 3 = 2.4)
+	var/alist/phases_rapid_melee = alist(1 = 2, 2 = 3, 3 = 4)
+	var/alist/phases_melee_damage = alist(1 = 55, 2 = 48, 3 = 40)
+	var/alist/phases_resistance_lists = alist(
 	1 = list(RED_DAMAGE = 0.3, WHITE_DAMAGE = 0.4, BLACK_DAMAGE = 0.2, PALE_DAMAGE = 0.5),
 	2 = list(RED_DAMAGE = 0.4, WHITE_DAMAGE = 0.6, BLACK_DAMAGE = 0.25, PALE_DAMAGE = 0.8),
 	3 = list(RED_DAMAGE = 0.5, WHITE_DAMAGE = 0.8, BLACK_DAMAGE = 0.3, PALE_DAMAGE = 1),
 	)
 
 	// Slam phase scaling variables
-	var/list/phases_slam_windup = list(1 = 1.2 SECONDS, 2 = 0.9 SECONDS, 3 = 0.6 SECONDS)
-	var/list/phases_slam_damage = list(1 = 120, 2 = 110, 3 = 80)
-	var/list/phases_slam_range = list(1 = 3, 2 = 3, 3 = 2)
+	var/alist/phases_slam_windup = alist(1 = 1.2 SECONDS, 2 = 0.9 SECONDS, 3 = 0.6 SECONDS)
+	var/alist/phases_slam_damage = alist(1 = 120, 2 = 110, 3 = 80)
+	var/alist/phases_slam_range = alist(1 = 3, 2 = 3, 3 = 2)
 
 	// Slash phase scaling variables
-	var/list/phases_slash_damage = list(1 = 110, 2 = 100, 3 = 90)
-	var/list/phases_slash_healing = list(1 = 75, 2 = 100, 3 = 200)
+	var/alist/phases_slash_damage = alist(1 = 110, 2 = 100, 3 = 90)
+	var/alist/phases_slash_healing = alist(1 = 75, 2 = 100, 3 = 200)
 
 	// Dash phase scaling variables
-	var/list/phases_dash_windup = list(1 = 1.1 SECONDS, 2 = 0.9 SECONDS, 3 = 0.8 SECONDS)
-	var/list/phases_dash_damage = list(1 = 80, 2 = 70, 3 = 60)
-	var/list/phases_dash_healing = list(1 = 100, 2 = 150, 3 = 250)
+	var/alist/phases_dash_windup = alist(1 = 1.1 SECONDS, 2 = 0.9 SECONDS, 3 = 0.8 SECONDS)
+	var/alist/phases_dash_damage = alist(1 = 80, 2 = 70, 3 = 60)
+	var/alist/phases_dash_healing = alist(1 = 100, 2 = 150, 3 = 250)
 
 	// Parry & Riposte scaling variables
-	var/list/phases_riposte_damage = list(1 = 160, 2 = 150, 3 = 140)
-	var/list/phases_riposte_healing = list(1 = 200, 2 = 300, 3 = 500)
+	var/alist/phases_riposte_damage = alist(1 = 160, 2 = 150, 3 = 140)
+	var/alist/phases_riposte_healing = alist(1 = 200, 2 = 300, 3 = 500)
 
 	// Trash Disposal scaling variables
-	var/list/phases_disposal_damage = list(1 = 60, 2 = 50, 3 = 40)
-	var/list/phases_disposal_healing = list(1 = 75, 2 = 100, 3 = 150)
+	var/alist/phases_disposal_damage = alist(1 = 60, 2 = 50, 3 = 40)
+	var/alist/phases_disposal_healing = alist(1 = 75, 2 = 100, 3 = 150)
 
 	// Summon Sweepers scaling variables
-	var/list/phases_squad_size_grunts = list(1 = 6, 2 = 5, 3 = 4)
-	var/list/phases_squad_size_commanders = list(1 = 2, 2 = 1, 3 = 0)
+	var/alist/phases_squad_size_grunts = alist(1 = 6, 2 = 5, 3 = 4)
+	var/alist/phases_squad_size_commanders = alist(1 = 2, 2 = 1, 3 = 0)
 
 // Here be procs
 
@@ -236,12 +239,15 @@ Some other overrides like AttackingTarget() are in the Combat section instead.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
+/mob/living/simple_animal/hostile/ordeal/indigo_midnight/weak
+	weakened = TRUE
+
 /mob/living/simple_animal/hostile/ordeal/indigo_midnight/Destroy()
 	dash_hitlist = null
 	dash_hitlist_turfs = null
 	return ..()
 
-/mob/living/simple_animal/hostile/ordeal/indigo_midnight/Initialize(mapload)
+/mob/living/simple_animal/hostile/ordeal/indigo_midnight/Initialize(mapload, scaling_override)
 	. = ..()
 	// Follow me if you want to live. All Sweeper types will be included in our Leadership component.
 	var/units_to_add = list(
@@ -256,7 +262,7 @@ Some other overrides like AttackingTarget() are in the Combat section instead.
 		)
 	AddComponent(/datum/component/ai_leadership/matriarch, units_to_add, 50) // This leadership component has some special behaviour. Check near the bottom of the file to find it.
 	nitb_cooldown = world.time + (nitb_cooldown_duration * 0.33)
-	HandlePlayerScaling()
+	HandlePlayerScaling(scaling_override)
 
 	// Give us three combat abilities and Summon Sweepers to begin with. We begin with half their cooldown ticked down.
 	for(var/i in 1 to 3)
@@ -266,8 +272,8 @@ Some other overrides like AttackingTarget() are in the Combat section instead.
 	available_abilities[SUPPORT_ABILITY_SUMMON] = world.time + ability_cooldown_durations[SUPPORT_ABILITY_SUMMON] * 0.5
 
 // Called on Initialize() to update our stuff to right values for amount of players we're facing. Please never call this ever again
-/mob/living/simple_animal/hostile/ordeal/indigo_midnight/proc/HandlePlayerScaling()
-	var/amount_of_dangerous_fuel = length(AllLivingAgents(TRUE))
+/mob/living/simple_animal/hostile/ordeal/indigo_midnight/proc/HandlePlayerScaling(scaling_override)
+	var/amount_of_dangerous_fuel = (scaling_override && scaling_override > 0) ? scaling_override : length(AllLivingAgents(TRUE))
 	player_scaling = amount_of_dangerous_fuel
 
 	// Health scaling
@@ -295,7 +301,8 @@ Some other overrides like AttackingTarget() are in the Combat section instead.
 		LosePatience() // She can, sometimes, have a target while idle but far away from her target, causing her to not patrol towards them.
 
 	AttemptUseSupportAbility() // Try to use a support ability every once in a while. The proc we're calling checks if any are ready.
-	NightInTheBackstreets() // This has a cooldown, don't worry. It will also only trigger if the player scaling's hit a certain amount.
+	if(!weakened)
+		NightInTheBackstreets() // This has a cooldown, don't worry. It will also only trigger if the player scaling's hit a certain amount.
 
 /mob/living/simple_animal/hostile/ordeal/indigo_midnight/PostDamageReaction(damage_amount, damage_type, source, attack_type)
 	. = ..()
@@ -447,7 +454,8 @@ This is all code relating to handling incoming damage.
 	var/pulse_scaled_damage = pulse_base_damage + (frustration_procced * 25) // This becomes a facility-wiping obliteration nuke if you spam ranged on her
 
 	var/sound/sfx = sound('sound/weapons/resonator_blast.ogg')
-	for(var/mob/living/L in urange(90, src))
+	var/radius_of_howl = weakened ? 10 : 90
+	for(var/mob/living/L in urange(radius_of_howl, src))
 		if(faction_check_mob(L, TRUE))
 			continue
 		SEND_SOUND(L, sfx)
@@ -1218,7 +1226,7 @@ This is all code relating to Matriarch's support abilities and sweeper summoning
 
 /// Only called if we meet player_scaling_nitb_threshold
 /mob/living/simple_animal/hostile/ordeal/indigo_midnight/proc/NightInTheBackstreets()
-	if(player_scaling < player_scaling_nitb_threshold || nitb_cooldown > world.time)
+	if(player_scaling < player_scaling_nitb_threshold || nitb_cooldown > world.time || weakened)
 		return FALSE
 
 	// Stop her from trying to do NitB if she's not on the facility Z Level
@@ -1414,7 +1422,7 @@ This is all code relating to Matriarch's support abilities and sweeper summoning
 		memory_of_a_matriarch = WEAKREF(mother)
 		var/mob/living/simple_animal/hostile/ordeal/indigo_midnight/matriarch = ReturnMatriarch()
 		her_divine_right_to_rule_all_sweepers = matriarch.GetComponent(/datum/component/ai_leadership/matriarch)
-		if(matriarch.ordeal_reference)
+		if(matriarch.ordeal_reference && (!matriarch.weakened))
 			matriarch_ordeal_reference = matriarch.ordeal_reference
 		should_bind_to_matriarch = retinue
 	addtimer(CALLBACK(src, PROC_REF(SpawnSweeper), type), 1 SECONDS)
