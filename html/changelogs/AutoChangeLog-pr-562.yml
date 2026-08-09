@@ -1,0 +1,4 @@
+author: "X3ros"
+delete-after: True
+changes:
+  - bugfix: "fixed the lack of claw machine consoles at east lowsec"
