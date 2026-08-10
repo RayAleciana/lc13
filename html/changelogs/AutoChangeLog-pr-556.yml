@@ -1,4 +1,0 @@
-author: "SumirekoFan"
-delete-after: True
-changes:
-  - bugfix: "Fixed an error where abnormalities had a random gender upon being spawned due to their gender never being set to neutral."
