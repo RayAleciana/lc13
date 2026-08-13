@@ -1,0 +1,4 @@
+author: "InsightfulParasite"
+delete-after: True
+changes:
+  - bugfix: "testing range being effected by CoL daynight cycle"
