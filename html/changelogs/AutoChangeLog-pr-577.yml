@@ -1,0 +1,4 @@
+author: "KingSuperBOB"
+delete-after: True
+changes:
+  - code_imp: "Shrimp VIP now counts as a abno in defines, this avoids FF issues."
