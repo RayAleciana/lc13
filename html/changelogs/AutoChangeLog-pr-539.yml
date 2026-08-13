@@ -1,0 +1,4 @@
+author: "KingSuperBOB"
+delete-after: True
+changes:
+  - bugfix: "fixed RCA fbird not performing its AOE burn."
