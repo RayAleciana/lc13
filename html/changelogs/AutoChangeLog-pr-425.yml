@@ -1,4 +1,0 @@
-author: "InsightfulParasite"
-delete-after: True
-changes:
-  - refactor: "Several hard refrences are replaced with mob tags."

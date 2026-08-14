@@ -1,4 +1,0 @@
-author: "InsightfulParasite"
-delete-after: True
-changes:
-  - bugfix: "Hard deletes related to extra monsters"
