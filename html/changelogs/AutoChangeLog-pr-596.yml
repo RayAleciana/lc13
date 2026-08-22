@@ -1,5 +1,0 @@
-author: "Croissant-Man"
-delete-after: True
-changes:
-  - imageadd: "Updated Big and Will Be Bad Wolf sprites"
-  - code_imp: "Adjusted LCL Wolf's emote code very slightly to disallow emoting while full and have his loom emote transition into a looming loop."
