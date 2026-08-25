@@ -402,7 +402,7 @@
 ///from base of mob/create_mob_hud(): ()
 #define COMSIG_MOB_HUD_CREATED "mob_hud_created"
 
-///from base of /mob/living/proc/apply_damage(): (damage, damagetype, def_zone)
+///from base of /mob/living/proc/apply_damage(): (damage, damagetype, def_zone, source, flags, attack_type)
 #define COMSIG_MOB_APPLY_DAMGE	"mob_apply_damage"
 ///from base of /mob/living/proc/apply_damage(), happens after the mob has taken damage: (damage, damagetype, def_zone)
 #define COMSIG_MOB_AFTER_APPLY_DAMGE "mob_after_apply_damage"
@@ -437,6 +437,8 @@
 	#define MOB_DEADSAY_SIGNAL_INTERCEPT (1<<0)
 ///from /mob/living/emote(): ()
 #define COMSIG_MOB_EMOTE "mob_emote"
+///from /mob/show_message(): (msg, type) - fired for any visible/audible message shown to this mob
+#define COMSIG_MOB_SHOW_MESSAGE "mob_show_message"
 ///from base of mob/swap_hand(): (obj/item)
 #define COMSIG_MOB_SWAP_HANDS "mob_swap_hands"
 	#define COMPONENT_BLOCK_SWAP (1<<0)

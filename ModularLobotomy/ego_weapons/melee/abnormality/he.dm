@@ -1126,7 +1126,12 @@
 
 /obj/item/ego_weapon/warp/proc/UserMoved()
 	SIGNAL_HANDLER
-	HandleCharge(0.1)
+	var/mob/living/carbon/human/myman = current_holder
+	var/obj/item/clothing/suit/armor/ego_gear/realization/dimension_ripper/Z = myman.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+	if(istype(Z))
+		HandleCharge(1)
+	else
+		HandleCharge(0.1)
 
 /obj/item/ego_weapon/warp/afterattack(atom/target, mob/living/user, proximity_flag, clickparams)
 	if(!CanUseEgo(user))
@@ -1785,7 +1790,7 @@
 	return 40
 
 /obj/item/ego_weapon/lifestew
-	name = "lifetime stew"
+	name = "decamillennial cauldron"
 	desc = "Take a large stone, put it into a sufficient quantity of boiling water; properly season it with pepper and salt... \
 	When the soup is made the stone may be thrown away!"
 	special = "This weapon stores up to 3 projectiles and gains a new projectile on a successful hit."
